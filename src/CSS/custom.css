@@ -1,0 +1,96 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* TailwindCSS Setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+.active-text{
+  @apply text-main;
+}
+
+/* styles.css */
+.container {
+  @apply mx-auto px-4 md:px-8 lg:px-12 tablet:px-16 laptop:px-20 desktop:px-24 py-8 sm:py-10 md:py-12 tablet:py-14 bg-red-900;
+}
+
+/* Hamburger Toggle Animation */
+.hamburger-active > span:nth-child(1) {
+  transform-origin: right;
+  transform: rotate(-40deg);
+}
+
+.hamburger-active > span:nth-child(2) {
+  transform: scale(0);
+}
+
+.hamburger-active > span:nth-child(3) {
+  transform-origin: right;
+  transform: rotate(40deg);
+  width: 35px;
+}
+
+/* Reusable Classes */
+.nav-link {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  color: #1F1F1F;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #0084FF;
+}
+
+.mobile-nav-link {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem; /* Tailwind text-sm */
+  font-weight: 600;
+  color: #1F1F1F;
+  transition: color 0.2s;
+}
+
+.mobile-nav-link:hover {
+  color: #0084FF;
+}
+
+.btn-primary {
+  background-color: #0084FF;
+  color: #FFFFFF;
+  padding: 0.5rem 2rem; /* Tailwind px-8 py-3 */
+  border-radius: 0.5rem; /* Tailwind rounded-lg */
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #FF6347;
+  color: #FFFFFF;
+}
+
+.mobile-btn-primary {
+  background-color: #0084FF;
+  color: #FFFFFF;
+  padding: 0.5rem 0; /* Tailwind py-2 */
+  text-align: center;
+  border-radius: 0.5rem; /* Tailwind rounded-lg */
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.mobile-btn-primary:hover {
+  background-color: #FF6347;
+  color: #FFFFFF;
+}
+
+.nav-btn{
+  @apply text-dark p-2 rounded-md flex text-lg flex-col items-center font-medium hover:text-white hover:bg-main;
+}
+
+.footer-nav-link{
+  @apply text-white font-medium hover:underline duration-100
+}
