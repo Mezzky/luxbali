@@ -273,26 +273,26 @@
   <div class="search-bar flex flex-col w-full">
     <ul class="grid grid-cols-2 text-sm font-medium text-center bg-white py-4 tablet:px-6 tablet:flex laptop:px-20" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
         <li class="me-2" role="presentation">
-            <button class="inline-block py-2 px-4 border-b-2 rounded-t-lg" id="accomodation-tab" data-tabs-target="#accomodation" type="button" role="tab" aria-controls="accomodation" aria-selected="false">Accomodation</button>
+            <button class="inline-block py-2 px-4 border-b-2 laptop:text-lg rounded-t-lg" id="accomodation-tab" data-tabs-target="#accomodation" type="button" role="tab" aria-controls="accomodation" aria-selected="false">Accomodation</button>
         </li>
         <li class="me-2" role="presentation">
-            <button class="inline-block py-2 px-4 border-b-2 rounded-t-lg hover:text-dark hover:border-gray-300" id="destination-tab" data-tabs-target="#destination" type="button" role="tab" aria-controls="destination" aria-selected="false">Destination</button>
+            <button class="inline-block py-2 px-4 border-b-2 laptop:text-lg rounded-t-lg hover:text-dark hover:border-gray-300" id="destination-tab" data-tabs-target="#destination" type="button" role="tab" aria-controls="destination" aria-selected="false">Destination</button>
         </li>
         <li class="me-2" role="presentation">
-            <button class="inline-block py-2 px-4 border-b-2 rounded-t-lg hover:text-dark hover:border-gray-300" id="attraction-tab" data-tabs-target="#attraction" type="button" role="tab" aria-controls="attraction" aria-selected="false">Bali Attraction</button>
+            <button class="inline-block py-2 px-4 border-b-2 laptop:text-lg rounded-t-lg hover:text-dark hover:border-gray-300" id="attraction-tab" data-tabs-target="#attraction" type="button" role="tab" aria-controls="attraction" aria-selected="false">Bali Attraction</button>
         </li>
         <li class="me-2" role="presentation">
-            <button class="inline-block py-2 px-4 border-b-2 rounded-t-lg hover:text-dark hover:border-gray-300" id="transport-tab" data-tabs-target="#transport" type="button" role="tab" aria-controls="transport" aria-selected="false">Transportation</button>
+            <button class="inline-block py-2 px-4 border-b-2 laptop:text-lg rounded-t-lg hover:text-dark hover:border-gray-300" id="transport-tab" data-tabs-target="#transport" type="button" role="tab" aria-controls="transport" aria-selected="false">Transportation</button>
         </li>
     </ul>
     <div id="default-tab-content">
       <form id="accomodation" role="tabpanel" aria-labelledby="accomodation-tab" class="bg-white py-4 px-6 flex flex-col gap-2 tablet:flex-row tablet:w-full tablet:pb-6 laptop:px-20 laptop:pb-12" action="">
         <div class="input-box flex flex-col w-full">
-          <label for="accommodation" class="block mb-2 text-sm font-medium text-dark">Search Accommodation</label>
-          <input type="text" id="accommodation" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Search Place" required />
+          <label for="accommodation" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Search Accommodation</label>
+          <input type="text" id="accommodation" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 laptop:text-md" placeholder="Search Place" required />
         </div>
         <div class="input-box flex flex-col w-full">
-          <label for="date-range-picker" class="block mb-2 text-sm font-medium text-dark">Traveling Period</label>
+          <label for="date-range-picker" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Traveling Period</label>
           <div id="date-range-picker" date-rangepicker class="flex items-center w-full">
             <div class="relative w-full">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -319,11 +319,11 @@
       <div class="hidden" id="destination" role="tabpanel" aria-labelledby="destination-tab">
         <form class="bg-white py-4 px-6 flex flex-col gap-2 tablet:flex-row tablet:w-full tablet:pb-6 laptop:px-20 laptop:pb-12" action="">
           <div class="input-box flex flex-col w-full">
-            <label for="destination" class="block mb-2 text-sm font-medium text-dark">Search Destination</label>
-            <input type="text" id="destination" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Search Location" required />
+            <label for="destination" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Search Destination</label>
+            <input type="text" id="destination" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 laptop:text-md" placeholder="Search Location" required />
           </div>
           <div class="input-box flex flex-col w-full">
-            <label for="default-datepicker" class="block mb-2 text-sm font-medium text-dark">Traveling Date</label>
+            <label for="default-datepicker" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Traveling Date</label>
             <div class="relative w-full">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -340,11 +340,11 @@
       <div class="hidden" id="attraction" role="tabpanel" aria-labelledby="attraction-tab">
         <form class="bg-white py-4 px-6 flex flex-col gap-2 tablet:flex-row tablet:w-full tablet:pb-6 laptop:px-20 laptop:pb-12" action="">
           <div class="input-box flex flex-col w-full">
-            <label for="attraction" class="block mb-2 text-sm font-medium text-dark">Search Attraction</label>
-            <input type="text" id="attraction" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Search Activity" required />
+            <label for="attraction" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Search Attraction</label>
+            <input type="text" id="attraction" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 laptop:text-md" placeholder="Search Activity" required />
           </div>
           <div class="input-box flex flex-col w-full">
-            <label for="datepicker-attraction" class="block mb-2 text-sm font-medium text-dark">Traveling Date</label>
+            <label for="datepicker-attraction" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Traveling Date</label>
             <div class="relative w-full">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -361,11 +361,11 @@
       <div class="hidden" id="transport" role="tabpanel" aria-labelledby="transport-tab">
         <form class="bg-white py-4 px-6 flex flex-col gap-2 tablet:flex-row tablet:w-full tablet:pb-6 laptop:px-20 laptop:pb-12" action="">
           <div class="input-box flex flex-col w-full">
-            <label for="transport" class="block mb-2 text-sm font-medium text-dark">Search Transportation</label>
-            <input type="text" id="transport" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Search Transport" required />
+            <label for="transport" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Search Transportation</label>
+            <input type="text" id="transport" class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 laptop:text-md" placeholder="Search Transport" required />
           </div>
           <div class="input-box flex flex-col w-full">
-            <label for="date-range-transport" class="block mb-2 text-sm font-medium text-dark">Traveling Period</label>
+            <label for="date-range-transport" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Traveling Period</label>
             <div id="date-range-transport" date-rangepicker class="flex items-center w-full">
               <div class="relative w-full">
                 <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -392,14 +392,292 @@
     </div>
   </div>
 
-  <!-- Carousel Accommodation -->
-  <!-- <section class="carousel w-full px-5 flex flex-col gap-2">
-    <div class="title relative">
-      <h2 class="uppercase text-dark">accommodation</h2>
-      <a href="accommodation.html">See More</a>
+  <!-- Accommodation Section -->
+  <section class="carousel w-full px-5 flex flex-col gap-8 pt-8 pb-24 laptop:px-20">
+    <!-- Title -->
+    <div class="title relative flex justify-between w-full items-center">
+      <a class="bg-green-500 hidden text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-accent tablet:text-lg tablet:block tablet:invisible laptop:py-4 laptop:px-16 laptop:text-xl" href="accommodation.html">See More</a>
+      <h2 class="uppercase text-dark text-lg font-bold tablet:text-xl laptop:text-3xl">accommodation</h2>
+      <a class="bg-green-500 text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-accent tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl" href="accommodation.html">See More</a>
     </div>
 
-  </section> -->
+    <!-- Carousel -->
+    
+
+    <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative rounded-lg overflow-hidden h-[450px] laptop:h-[700px]">
+          <!-- Item 1 -->
+          <div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out" data-carousel-item="active">
+            <div class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
+              <div class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak Beach</h3>
+              <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel Indigo Bali Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
+              <a class="bg-dark w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl" href="#">Details</a>
+            </div>
+      
+            <!-- Accommodation Image List Go Here -->
+            <div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
+              <div class="h-auto w-full overflow-hidden flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <div class="img-list grid grid-cols-4">
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-1.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-2.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-3.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-4.jfif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out" data-carousel-item>
+            <div class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
+              <div class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak Beach</h3>
+              <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel Indigo Bali Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
+              <a class="bg-dark w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl" href="#">Details</a>
+            </div>
+      
+            <!-- Accommodation Image List Go Here -->
+            <div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
+              <div class="h-auto w-full overflow-hidden flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <div class="img-list grid grid-cols-4">
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-1.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-2.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-3.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-4.jfif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out" data-carousel-item>
+            <div class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
+              <div class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak Beach</h3>
+              <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel Indigo Bali Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
+              <a class="bg-dark w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl" href="#">Details</a>
+            </div>
+      
+            <!-- Accommodation Image List Go Here -->
+            <div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
+              <div class="h-auto w-full overflow-hidden flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <div class="img-list grid grid-cols-4">
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-1.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-2.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-3.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-4.jfif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out" data-carousel-item>
+            <div class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
+              <div class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak Beach</h3>
+              <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel Indigo Bali Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
+              <a class="bg-dark w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl" href="#">Details</a>
+            </div>
+      
+            <!-- Accommodation Image List Go Here -->
+            <div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
+              <div class="h-auto w-full overflow-hidden flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <div class="img-list grid grid-cols-4">
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-1.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-2.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-3.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-4.jfif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out" data-carousel-item>
+            <div class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
+              <div class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak Beach</h3>
+              <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel Indigo Bali Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
+              <a class="bg-dark w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl" href="#">Details</a>
+            </div>
+      
+            <!-- Accommodation Image List Go Here -->
+            <div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
+              <div class="h-auto w-full overflow-hidden flex items-center justify-center">
+                <!-- Accommodation Thumbnail Here -->
+                <img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+              </div>
+              <div class="img-list grid grid-cols-4">
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-1.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-2.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-3.jfif" alt="">
+                </div>
+                <div class="w-full h-full overflow-hidden flex items-center justify-center">
+                  <!-- Accommodation Thumbnail Here -->
+                  <img class="w-full h-full" src="img/img-4.jfif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute bg-dark py-2 px-4 rounded-md z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse -bottom-16 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-dark dark:bg-gray-800/30 group-hover:bg-dark/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+          </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-dark dark:bg-gray-800/30 group-hover:bg-dark/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+          </span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Destination Section -->
+  <section class="w-full flex flex-col gap-8 py-8">
+    <!-- Title -->
+    <div class="title px-5 laptop:px-20 relative flex justify-between w-full items-center">
+      <a class="bg-green-500 hidden text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-accent tablet:text-lg tablet:block tablet:invisible laptop:py-4 laptop:px-16 laptop:text-xl" href="destination.html">See More</a>
+      <h2 class="uppercase text-dark text-lg font-bold tablet:text-xl laptop:text-3xl">destination</h2>
+      <a class="bg-green-500 text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-accent tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl" href="destination.html">See More</a>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 tablet:grid-cols-2">
+      <div class="destination-card relative rounded-lg overflow-hidden">
+        <img class="w-full" src="img/bali-img.png" alt="">
+        <div class="content absolute bottom-0 bg-gradient-to-t from-dark to-transparent h-16 w-full px-4">
+          <h3 class="text-white text-xl font-bold">Bali</h3>
+          <p class="text-white">Indonesia</p>
+          <a class="border-2 absolute right-4 bottom-4 border-white rounded-full px-3 py-1" href="">
+            <i class="fa-solid fa-angle-right text-white"></i>
+          </a>
+        </div>
+      </div>
+      <div class="destination-card relative rounded-lg overflow-hidden">
+        <img class="w-full" src="img/maldives-img.png" alt="">
+        <div class="content absolute bottom-0 bg-gradient-to-t from-dark to-transparent h-16 w-full px-4">
+          <h3 class="text-white text-xl font-bold">Bali</h3>
+          <p class="text-white">Indonesia</p>
+          <a class="border-2 absolute right-4 bottom-4 border-white rounded-full px-3 py-1" href="">
+            <i class="fa-solid fa-angle-right text-white"></i>
+          </a>
+        </div>
+      </div>
+      <div class="destination-card relative rounded-lg overflow-hidden">
+        <img class="w-full" src="img/singapore-img.png" alt="">
+        <div class="content absolute bottom-0 bg-gradient-to-t from-dark to-transparent h-16 w-full px-4">
+          <h3 class="text-white text-xl font-bold">Bali</h3>
+          <p class="text-white">Indonesia</p>
+          <a class="border-2 absolute right-4 bottom-4 border-white rounded-full px-3 py-1" href="">
+            <i class="fa-solid fa-angle-right text-white"></i>
+          </a>
+        </div>
+      </div>
+      <div class="destination-card relative rounded-lg overflow-hidden">
+        <img class="w-full" src="img/thailand-img.png" alt="">
+        <div class="content absolute bottom-0 bg-gradient-to-t from-dark to-transparent h-16 w-full px-4">
+          <h3 class="text-white text-xl font-bold">Bali</h3>
+          <p class="text-white">Indonesia</p>
+          <a class="border-2 absolute right-4 bottom-4 border-white rounded-full px-3 py-1" href="">
+            <i class="fa-solid fa-angle-right text-white"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
