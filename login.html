@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/custom.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c3d5183f0f.js" crossorigin="anonymous"></script>
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <!-- Tailwind Variable -->
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "320px",
+                    md: "375px",
+                    lg: "425px",
+                    tablet: "768px",
+                    laptop: "1440px",
+                    desktop: "1920px",
+                },
+                extend: {
+                    fontFamily: {
+                        outfit: ['Outfit', 'sans-serif'], // Add Google Font here
+                    },
+                    colors: {
+                        main: '#0084FF',
+                        light: '#F5FAFF',
+                        dark: '#1F1F1F',
+                        accent: '#FF6347',
+                        secondary: '#D6EBFF',
+                        success: '#61A85F',
+                        danger: '#FF5B5B',
+                    },
+                    backgroundImage: {
+                        "hero": "url('/src/img/hero-img.png')",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-outfit bg-secondary scroll-smooth">
+    
+	<!-- Login Choose User -->
+	<main class="w-full bg-light grid grid-cols-1 tablet:grid-cols-2">
+		<div class="img-box hidden tablet:flex w-full h-screen relative">
+			<div class="overlay w-full h-full bg-black/15 absolute"></div>
+			<img class="w-full" src="img/login-img.png" alt="login">
+			<h3 class="absolute z-10 left-10 bottom-10 text-white font-bold text-2xl laptop:text-4xl">Welcome to LuxBali</h3>
+		</div>
+		<div class="form-container h-screen flex flex-col gap-10 items-center justify-center px-5 lg:px-8 tablet:px-12 laptop:px-28">
+			<div class="title-box flex flex-col gap-4 items-center">
+				<img class="" src="img/logo-luxbali.png" alt="LuxBali Logo">
+				<div class="title flex flex-col items-center">
+					<h1 class="text-dark font-bold text-2xl laptop:text-4xl">Choose your Account</h1>
+					<p class="text-dark text-lg laptop:text-xl">As Customer or Agent</p>
+				</div>
+			</div>
+			<form class="form-box w-full flex flex-col gap-2" action="">
+				<a class="bg-main text-white text-center w-full rounded-md p-3 hover:bg-blue-400 duration-300" href="cust-register.html">Customer (B2C)</a>
+				<a class="bg-main text-white text-center w-full rounded-md p-3 hover:bg-blue-400 duration-300" href="agent-register.html">Agent (B2B)</a>
+			</form>
+			<p class="text-dark text-center px-10 md:px-0">
+				Already have an account?
+				<a class="text-main hover:underline" href="cust-login.html">(B2C)</a>
+				or
+				<a class="text-main hover:underline" href="agent-login.html">(B2B)</a>
+			</p>
+		</div>
+	</main>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- Main JS -->
+    <script src="JS/script.js"></script>
+    <!-- Date Picker -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
