@@ -438,6 +438,7 @@
                         <p class="text-dark">2 days</p>
                     </div>
                 </div>
+                
                 <!-- Price Summary -->
                 <div class="price-summary rounded-lg flex flex-col overflow-hidden">
                     <h2 class="bg-main text-white p-4 text-center font-bold">Price Summary</h2>
@@ -476,11 +477,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="total-price p-4 flex flex-col justify-between tablet:flex-row tablet:items-center bg-main gap-2">
-                        <h2 class="text-white font-bold text-lg">Total Price:</h2>
-                        <div class="price flex flex-col">
-                            <p class="text-white font-semibold text-lg">Rp. 3,500,000</p>
-                            <span class="text-white text-sm">includes taxes and charges</span>
+                    <div class="price-container flex flex-col bg-main gap-5 p-5">
+                        <div class="promo-box flex flex-col gap-2 w-full">
+                            <label 
+                                class="text-white font-semibold" 
+                                for="promoCode">
+                                Promo Code
+                            </label>
+                            <input 
+                                class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+                                type="text" 
+                                name="promoCode" 
+                                id="promoCode"
+                            >
+                        </div>
+                        <div class="total-price flex flex-col justify-between tablet:flex-row tablet:items-start bg-main gap-2">
+                            <h2 class="text-white font-bold text-lg">Total Price:</h2>
+                            <div class="price flex flex-col">
+                                <p class="text-white font-semibold text-lg">Rp. 3,500,000</p>
+                                <span class="text-white text-sm">includes taxes and charges</span>
+                                <span class="text-white bg-green-500 text-sm py-1 px-2 mt-2 rounded-md">10% Travel Agent Cashback</span>
+                            </div>
                         </div>
                     </div>
                 </div>
