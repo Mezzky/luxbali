@@ -48,52 +48,22 @@
 
 <body class="font-outfit bg-secondary scroll-smooth">
     
-	<!-- Agent Register -->
+	<!-- Login Agent -->
 	<main class="w-full bg-light grid grid-cols-1 tablet:grid-cols-2">
 		<div class="img-box hidden tablet:flex w-full h-screen relative">
 			<div class="overlay w-full h-full bg-black/15 absolute"></div>
-			<img class="w-full" src="img/login-img.png" alt="login">
+			<img class="w-full" src="../img/login-img.png" alt="login">
 			<h3 class="absolute z-10 left-10 bottom-10 text-white font-bold text-2xl laptop:text-4xl">Welcome to LuxBali</h3>
 		</div>
-		<div class="form-container h-screen flex flex-col gap-10 items-center justify-center px-5 lg:px-8 tablet:px-12 laptop:px-28 tablet:scale-75">
+		<div class="form-container h-screen flex flex-col gap-10 items-center justify-center px-5 lg:px-8 tablet:px-8 laptop:px-28 tablet:scale-90">
 			<div class="title-box flex flex-col gap-4 items-center">
-				<img class="" src="img/logo-luxbali.png" alt="LuxBali Logo">
+				<img class="" src="../img/logo-luxbali.png" alt="LuxBali Logo">
 				<div class="title flex flex-col items-center">
-					<h1 class="text-dark font-bold text-2xl laptop:text-4xl">Create an Account</h1>
-					<p class="text-dark text-lg laptop:text-xl">Let's get started!</p>
+					<h1 class="text-dark font-bold text-2xl laptop:text-4xl">Log in to your Account</h1>
+					<p class="text-dark text-lg laptop:text-xl">Welcome back!</p>
 				</div>
 			</div>
 			<form class="form-box w-full flex flex-col gap-4" action="">
-				<div class="box-input flex gap-2 w-full">
-					<div class="input-box flex flex-col gap-2 w-full">
-						<label 
-							class="text-dark font-semibold" 
-							for="agentName">
-							Agent Name
-						</label>
-						<input 
-							class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
-							type="text" 
-							name="agentName" 
-							id="agentName" 
-							required
-						>
-					</div>
-					<div class="input-box flex flex-col gap-2 w-full">
-						<label 
-							class="text-dark font-semibold" 
-							for="userCountry">
-							Country
-						</label>
-						<input 
-							class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
-							type="text" 
-							name="userCountry" 
-							id="userCountry" 
-							required
-						>
-					</div>
-				</div>
 				<div class="input-box flex flex-col gap-2 w-full">
                     <label 
                         class="text-dark font-semibold" 
@@ -111,34 +81,6 @@
 				<div class="input-box flex flex-col gap-2 w-full">
                     <label 
                         class="text-dark font-semibold" 
-                        for="userEmail">
-                        Email
-                    </label>
-                    <input 
-                        class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
-                        type="email" 
-                        name="userEmail" 
-                        id="userEmail" 
-                        required
-                    >
-                </div>
-				<div class="input-box flex flex-col gap-2 w-full">
-                    <label 
-                        class="text-dark font-semibold" 
-                        for="userPhone">
-                        Phone
-                    </label>
-                    <input 
-                        class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
-                        type="number" 
-                        name="userPhone" 
-                        id="userPhone" 
-                        required
-                    >
-                </div>
-				<div class="input-box flex flex-col gap-2 w-full">
-                    <label 
-                        class="text-dark font-semibold" 
                         for="userPassword">
                         Password
                     </label>
@@ -150,25 +92,37 @@
                         required
                     >
                 </div>
-				<div class="input-box flex flex-col gap-2 w-full">
-                    <label 
-                        class="text-dark font-semibold" 
-                        for="agentID">
-                        Agent ID
-                    </label>
+                <div class="remember-box flex justify-between items-center">
+                    <div class="flex items-center">
+                        <input id="remember-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                        <label for="remember-checkbox" class="ms-2 text-sm font-medium text-dark">Remember me</label>
+                    </div>
+                    <a class="text-main hover:underline text-sm" href="">Forgot password?</a>
+                </div>
+                <div class="captcha-box flex gap-2">
+                    <p class="bg-[#BB9B6A] py-2 px-4 text-white tablet:px-8">12345</p>
                     <input 
-                        class="w-full border border-dark rounded-md focus:ring-main focus:border-main" 
-                        type="file" 
-                        name="agentID" 
-                        id="agentID" 
+                        class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+                        type="text"
+                        placeholder="Input Captcha"
+                        name="userCaptcha" 
+                        id="userCaptcha" 
                         required
                     >
                 </div>
-				<button type="submit" class="bg-main text-white text-center w-full rounded-md p-3 hover:bg-blue-400 duration-300">Create Account</button>
+                <input 
+                    class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+                    type="text"
+                    placeholder="Google 2FA"
+                    name="google2FA" 
+                    id="google2FA" 
+                    required
+                >
+				<button type="submit" class="bg-main text-white text-center w-full rounded-md p-3 hover:bg-blue-400 duration-300">Login</button>
 			</form>
 			<p class="text-dark text-center px-10 md:px-0">
-				Already have an account?
-				<a class="text-main hover:underline" href="agent-login.html">Log in here</a>
+				Don’t have an account?
+				<a class="text-main hover:underline" href="agent-register.html">Create an account</a>
 			</p>
 		</div>
 	</main>

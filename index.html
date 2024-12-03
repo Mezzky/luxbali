@@ -46,7 +46,7 @@
     </script>
 </head>
 
-<body class="font-outfit bg-secondary scroll-smooth">
+<body class="font-outfit bg-secondary scroll-smooth overflow-x-hidden">
     <!-- Header -->
     <header class="fixed top-0 w-full bg-secondary z-50 p-4 tablet:p-5 laptop:px-20">
         <nav class="flex justify-between items-center">
@@ -78,6 +78,9 @@
                         </li>
                         <li>
                             <a href="promotion.html" class="block px-4 py-2 hover:bg-gray-100">Promotion</a>
+                        </li>
+                        <li>
+                            <a href="visa.html" class="block px-4 py-2 hover:bg-gray-100">Visa</a>
                         </li>
                     </ul>
                 </div>
@@ -236,7 +239,7 @@
                 </div>
 
                 <!-- Sign-In Button -->
-                <a href="login.html" class="btn-primary">Sign in</a>
+                <a href="./login/login.html" class="btn-primary">Sign in</a>
                 <a href="cart-page.html"><i
                         class="fa-solid fa-cart-shopping text-2xl text-main hover:text-accent duration-100"></i></a>
             </div>
@@ -259,7 +262,7 @@
             <li><a href="promotion.html" class="mobile-nav-link">Promotion</a></li>
             <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
             <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
-            <a href="login.html" class="mobile-btn-primary">Sign in</a>
+            <a href="./login/login.html" class="mobile-btn-primary">Sign in</a>
             <div class="nav-country flex laptop:hidden items-center justify-between gap-4">
                 <!-- Currency Dropdown -->
                 <div class="relative">
@@ -660,7 +663,7 @@
                         <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
                             Indigo Bali
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
+                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
                             href="#">Details</a>
                     </div>
 
@@ -708,7 +711,7 @@
                         <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
                             Indigo Bali
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
+                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
                             href="#">Details</a>
                     </div>
 
@@ -755,7 +758,7 @@
                         <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
                             Indigo Bali
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
+                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
                             href="#">Details</a>
                     </div>
 
@@ -802,7 +805,7 @@
                         <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
                             Indigo Bali
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
+                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
                             href="#">Details</a>
                     </div>
 
@@ -849,7 +852,7 @@
                         <p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
                             Indigo Bali
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-main tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
+                        <a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
                             href="#">Details</a>
                     </div>
 
@@ -1151,15 +1154,15 @@
     <!-- Footer -->
     <footer>
         <div
-            class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-10 items-start tablet:grid-cols-2 tablet:p-10 laptop:py-5 laptop:px-32">
+            class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-10 items-start tablet:grid-cols-2 tablet:p-10 laptop:py-10 laptop:px-32">
             <!-- Logo -->
-            <a href="index.html" class="flex items-center place-self-center tablet:place-self-start">
-                <img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-52" />
+            <a href="index.html" class="flex items-center self-center">
+                <img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-52 tablet:w-60" />
             </a>
             <div class="content flex gap-5 justify-center tablet:flex-row laptop:gap-24">
                 <div class="navigation flex flex-col gap-2">
-                    <h3 class="uppercase font-bold text-sm text-white">navigation</h3>
-                    <ul class="flex flex-col laptop:gap-4">
+                    <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">navigation</h3>
+                    <ul class="flex flex-col laptop:gap-2">
                         <li><a href="accommodation.html"
                                 class="text-white hover:underline duration-100">Accommodation</a></li>
                         <li><a href="destination.html"
@@ -1175,18 +1178,20 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contact flex flex-col gap-2">
-                    <h3 class="uppercase font-bold text-sm text-white">contact</h3>
-                    <ul class="flex flex-col laptop:gap-4">
-                        <li><a href="contact.html"
-                                class="text-white hover:underline duration-100">Contact
-                                LuxBali</a></li>
-                        <li><a href="about.html" class="text-white hover:underline duration-100">About
-                                LuxBali</a>
-                        </li>
-                    </ul>
-                    <div class="socmed flex items-center gap-4 mt-6 tablet:mt-4">
-                        <h3 class="font-semibold text-sm text-white">Follow Us</h3>
+                <div class="wrapper flex flex-col tablet:flex-row">
+                    <div class="contact flex flex-col gap-2">
+                        <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">contact</h3>
+                        <ul class="flex flex-col laptop:gap-2">
+                            <li><a href="contact.html"
+                                    class="text-white hover:underline duration-100">Contact
+                                    LuxBali</a></li>
+                            <li><a href="about.html" class="text-white hover:underline duration-100">About
+                                    LuxBali</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socmed flex items-start gap-4 mt-6 flex-col tablet:items-start tablet:ml-6 tablet:mt-0">
+                        <h3 class="font-semibold text-sm text-white tablet:text-lg">Follow Us</h3>
                         <ul class="flex gap-2">
                             <li class="flex items-center justify-center">
                                 <a href=""
@@ -1207,6 +1212,13 @@
             <p class="text-white text-center">&copy; <span id="currentYear"></span> Lux Bali. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Chat WhatsApp -->
+    <a
+        class="fixed bottom-10 right-10 z-50 text-3xl text-white py-3 px-4 rounded-full bg-green-500 duration-200 hover:bg-green-300"
+        href="https://wa.me/6281805690418?text=Hallo%20Saya%20ingin%20Menanyakan%20Beberapa%20hal%20mengenai%20Travel%20dari%20LuxBali."
+        ><i class="fa-solid fa-comment"></i>
+    </a>
 
     <!-- Flowbite JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>

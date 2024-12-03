@@ -48,22 +48,52 @@
 
 <body class="font-outfit bg-secondary scroll-smooth">
     
-	<!-- Customer Register -->
+	<!-- Agent Register -->
 	<main class="w-full bg-light grid grid-cols-1 tablet:grid-cols-2">
 		<div class="img-box hidden tablet:flex w-full h-screen relative">
 			<div class="overlay w-full h-full bg-black/15 absolute"></div>
-			<img class="w-full" src="img/login-img.png" alt="login">
+			<img class="w-full" src="../img/login-img.png" alt="login">
 			<h3 class="absolute z-10 left-10 bottom-10 text-white font-bold text-2xl laptop:text-4xl">Welcome to LuxBali</h3>
 		</div>
-		<div class="form-container h-screen flex flex-col gap-10 items-center justify-center px-5 lg:px-8 tablet:px-12 laptop:px-28 tablet:scale-90">
+		<div class="form-container h-screen flex flex-col gap-10 items-center justify-center px-5 lg:px-8 tablet:px-12 laptop:px-28 tablet:scale-75">
 			<div class="title-box flex flex-col gap-4 items-center">
-				<img class="" src="img/logo-luxbali.png" alt="LuxBali Logo">
+				<img class="" src="../img/logo-luxbali.png" alt="LuxBali Logo">
 				<div class="title flex flex-col items-center">
 					<h1 class="text-dark font-bold text-2xl laptop:text-4xl">Create an Account</h1>
 					<p class="text-dark text-lg laptop:text-xl">Let's get started!</p>
 				</div>
 			</div>
 			<form class="form-box w-full flex flex-col gap-4" action="">
+				<div class="box-input flex gap-2 w-full">
+					<div class="input-box flex flex-col gap-2 w-full">
+						<label 
+							class="text-dark font-semibold" 
+							for="agentName">
+							Agent Name
+						</label>
+						<input 
+							class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+							type="text" 
+							name="agentName" 
+							id="agentName" 
+							required
+						>
+					</div>
+					<div class="input-box flex flex-col gap-2 w-full">
+						<label 
+							class="text-dark font-semibold" 
+							for="userCountry">
+							Country
+						</label>
+						<input 
+							class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+							type="text" 
+							name="userCountry" 
+							id="userCountry" 
+							required
+						>
+					</div>
+				</div>
 				<div class="input-box flex flex-col gap-2 w-full">
                     <label 
                         class="text-dark font-semibold" 
@@ -120,15 +150,25 @@
                         required
                     >
                 </div>
+				<div class="input-box flex flex-col gap-2 w-full">
+                    <label 
+                        class="text-dark font-semibold" 
+                        for="agentID">
+                        Agent ID
+                    </label>
+                    <input 
+                        class="w-full border border-dark rounded-md focus:ring-main focus:border-main" 
+                        type="file" 
+                        name="agentID" 
+                        id="agentID" 
+                        required
+                    >
+                </div>
 				<button type="submit" class="bg-main text-white text-center w-full rounded-md p-3 hover:bg-blue-400 duration-300">Create Account</button>
-				<button type="submit" class="bg-light flex gap-1 items-center justify-center border border-dark text-dark text-center w-full rounded-md p-3 hover:bg-dark hover:text-white duration-300">
-                    <img src="img/google-favicon.svg" alt="google-favicon">
-                    Sign up with Google
-                </button>
 			</form>
 			<p class="text-dark text-center px-10 md:px-0">
 				Already have an account?
-				<a class="text-main hover:underline" href="cust-login.html">Log in here</a>
+				<a class="text-main hover:underline" href="agent-login.html">Log in here</a>
 			</p>
 		</div>
 	</main>

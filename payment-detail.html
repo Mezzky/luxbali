@@ -79,6 +79,9 @@
                         <li>
                             <a href="promotion.html" class="block px-4 py-2 hover:bg-gray-100">Promotion</a>
                         </li>
+                        <li>
+                            <a href="visa.html" class="block px-4 py-2 hover:bg-gray-100">Visa</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -236,7 +239,7 @@
                 </div>
 
                 <!-- Sign-In Button -->
-                <a href="login.html" class="btn-primary">Sign in</a>
+                <a href="./login/login.html" class="btn-primary">Sign in</a>
                 <a href="cart-page.html"><i
                         class="fa-solid fa-cart-shopping text-2xl text-main hover:text-accent duration-100"></i></a>
             </div>
@@ -259,7 +262,7 @@
             <li><a href="promotion.html" class="mobile-nav-link">Promotion</a></li>
             <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
             <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
-            <a href="login.html" class="mobile-btn-primary">Sign in</a>
+            <a href="./login/login.html" class="mobile-btn-primary">Sign in</a>
             <div class="nav-country flex laptop:hidden items-center justify-between gap-4">
                 <!-- Currency Dropdown -->
                 <div class="relative">
@@ -651,57 +654,71 @@
     <!-- Footer -->
     <footer>
         <div
-            class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-5 items-start tablet:grid-cols-2 tablet:py-16 tablet:px-12 laptop:px-32">
+            class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-10 items-start tablet:grid-cols-2 tablet:p-10 laptop:py-10 laptop:px-32">
             <!-- Logo -->
-            <a href="index.html" class="flex items-center">
-                <img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-44 tablet:w-52 laptop:w-72" />
+            <a href="index.html" class="flex items-center self-center">
+                <img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-52 tablet:w-60" />
             </a>
-            <div class="content flex flex-col gap-5 justify-end tablet:flex-row laptop:gap-24">
+            <div class="content flex gap-5 justify-center tablet:flex-row laptop:gap-24">
                 <div class="navigation flex flex-col gap-2">
-                    <h3 class="uppercase font-bold text-2xl text-white">navigation</h3>
-                    <ul class="flex flex-col laptop:gap-4">
+                    <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">navigation</h3>
+                    <ul class="flex flex-col laptop:gap-2">
                         <li><a href="accommodation.html"
-                                class="text-white hover:underline duration-100 laptop:text-xl">Accommodation</a></li>
+                                class="text-white hover:underline duration-100">Accommodation</a></li>
                         <li><a href="destination.html"
-                                class="text-white hover:underline duration-100 laptop:text-xl">Destination</a></li>
+                                class="text-white hover:underline duration-100">Destination</a></li>
                         <li><a href="bali-atraction.html"
-                                class="text-white hover:underline duration-100 laptop:text-xl">Bali Attraction</a></li>
+                                class="text-white hover:underline duration-100">Bali
+                                Attraction</a></li>
                         <li><a href="transport.html"
-                                class="text-white hover:underline duration-100 laptop:text-xl">Transport</a></li>
+                                class="text-white hover:underline duration-100">Transport</a>
+                        </li>
                         <li><a href="promotion.html"
-                                class="text-white hover:underline duration-100 laptop:text-xl">Promotion</a></li>
+                                class="text-white hover:underline duration-100">Promotion</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="contact flex flex-col gap-2">
-                    <h3 class="uppercase font-bold text-2xl text-white">contact</h3>
-                    <ul class="flex flex-col laptop:gap-4">
-                        <li><a href="contact.html"
-                                class="text-white hover:underline duration-100 laptop:text-xl">Contact LuxBali</a></li>
-                        <li><a href="about.html" class="text-white hover:underline duration-100 laptop:text-xl">About
-                                LuxBali</a></li>
-                    </ul>
-                    <div class="socmed flex flex-col gap-6">
-                        <h3 class="font-semibold text-2xl text-white">Follow Us</h3>
+                <div class="wrapper flex flex-col tablet:flex-row">
+                    <div class="contact flex flex-col gap-2">
+                        <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">contact</h3>
+                        <ul class="flex flex-col laptop:gap-2">
+                            <li><a href="contact.html"
+                                    class="text-white hover:underline duration-100">Contact
+                                    LuxBali</a></li>
+                            <li><a href="about.html" class="text-white hover:underline duration-100">About
+                                    LuxBali</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socmed flex items-start gap-4 mt-6 flex-col tablet:items-start tablet:ml-6 tablet:mt-0">
+                        <h3 class="font-semibold text-sm text-white tablet:text-lg">Follow Us</h3>
                         <ul class="flex gap-2">
                             <li class="flex items-center justify-center">
                                 <a href=""
-                                    class="text-white px-3 py-2 rounded-lg bg-accent hover:bg-main duration-100"><i
-                                        class="text-2xl fa-brands fa-whatsapp"></i></a>
+                                    class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
+                                        class="text-xl fa-brands fa-whatsapp"></i></a>
                             </li>
                             <li class="flex items-center justify-center">
                                 <a href=""
-                                    class="text-white px-3 py-2 rounded-lg bg-accent hover:bg-main duration-100"><i
-                                        class="text-2xl fa-brands fa-instagram"></i></a>
+                                    class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
+                                        class="text-xl fa-brands fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright flex items-center justify-center p-4 bg-main">
+        <div class="copyright flex items-center justify-center p-4 bg-main laptop:p-3">
             <p class="text-white text-center">&copy; <span id="currentYear"></span> Lux Bali. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Chat WhatsApp -->
+    <a
+        class="fixed bottom-10 right-10 z-50 text-3xl text-white py-3 px-4 rounded-full bg-green-500 duration-200 hover:bg-green-300"
+        href="https://wa.me/6281805690418?text=Hallo%20Saya%20ingin%20Menanyakan%20Beberapa%20hal%20mengenai%20Travel%20dari%20LuxBali."
+        ><i class="fa-solid fa-comment"></i>
+    </a>
 
     <!-- Flowbite JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
