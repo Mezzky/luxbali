@@ -419,11 +419,12 @@
 	</header>
 
 	<!-- Title Hero -->
-	<section class="relative bg-hero w-full bg-cover bg-center bg-no-repeat pt-60 overflow-hidden">
+	<section class="relative bg-hero w-full bg-cover bg-center bg-no-repeat pt-60 overflow-hidden laptop:pt-[500px]">
 		<!-- Overlay Content -->
 		<div class="absolute inset-0 z-10 w-full h-full bg-black/40 flex items-end justify-center">
-			<h1 class="text-white uppercase mb-16 text-center text-lg font-bold laptop:text-4xl w-max">
+			<h1 class="text-white flex flex-col items-center uppercase mb-16 laptop:mb-44 text-center text-lg font-bold laptop:text-4xl w-max">
 				accommodation
+				<span class="text-sm mt-2">luxbali > accommodation</span>
 			</h1>
 		</div>
 	</section>
@@ -432,7 +433,7 @@
 	<div class="search-bar flex flex-col w-full">
 		<div id="default-tab-content">
 			<form id="accomodation" role="tabpanel" aria-labelledby="accomodation-tab"
-				class="bg-white py-4 px-6 flex flex-col gap-2 tablet:flex-row tablet:w-full tablet:pb-6 laptop:px-20 laptop:pb-12"
+				class="bg-white py-6 px-6 flex flex-col gap-2 tablet:flex-row tablet:px-12 tablet:w-full laptop:px-52 desktop:px-72"
 				action="">
 				<div class="input-box flex flex-col w-full">
 					<label for="accommodation" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Search
@@ -480,11 +481,11 @@
 	</div>
 
 	<!-- Accommodation Section -->
-	<section class="carousel w-full px-5 flex flex-col gap-8 pt-8 pb-24 laptop:px-20">
+	<section class="accommodation-container w-full px-5 flex flex-col gap-8 pt-8 pb-24 tablet:px-12 laptop:px-52 desktop:px-72">
 		<!-- Title -->
 		<div class="title relative flex flex-col w-full gap-2">
-			<h2 class="text-dark text-lg font-bold tablet:text-xl laptop:text-3xl">Accommodation Product Lists</h2>
-			<button class="font-semibold border-2 border-main w-full p-4 text-center text-main rounded-lg duration-100 hover:bg-white tablet:hidden" data-drawer-target="drawer-filter" data-drawer-show="drawer-filter"
+			<h2 class="text-dark text-lg font-bold tablet:text-xl laptop:text-4xl">Accommodation Product Lists</h2>
+			<button class="font-semibold border-2 border-main w-full p-4 text-center text-main rounded-lg duration-100 hover:bg-white laptop:hidden" data-drawer-target="drawer-filter" data-drawer-show="drawer-filter"
 			aria-controls="drawer-filter">
 				<i class="fa-solid fa-filter"></i>
 				Show Filter
@@ -493,7 +494,7 @@
 
 		<!-- Drawer Filter -->
 		<div id="drawer-filter"
-			class="fixed top-0 left-0 z-40 h-screen pt-28 p-4 overflow-y-auto transition-transform -translate-x-full bg-dark w-80 tablet:hidden"
+			class="fixed top-0 left-0 z-40 h-screen pt-28 p-4 overflow-y-auto transition-transform -translate-x-full bg-dark w-80 laptop:hidden"
 			tabindex="-1" aria-labelledby="drawer-label">
 			<h5 id="drawer-label"
 				class="inline-flex items-center mb-4 text-xl font-semibold text-gray-500"><svg
@@ -515,326 +516,294 @@
 			<div class="filter-lists flex flex-col gap-2">
 				<div class="flex items-center">
 					<input id="default-checkbox-1" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-1" class="ms-2 text-lg font-medium text-white">5 Star Luxury</label>
+					<label for="default-checkbox-1" class="ms-2 text-base font-medium text-white">5 Star Luxury</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-2" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-2" class="ms-2 text-lg font-medium text-white">4 Star Economy</label>
+					<label for="default-checkbox-2" class="ms-2 text-base font-medium text-white">4 Star Economy</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-3" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-3" class="ms-2 text-lg font-medium text-white">3 Star Economy</label>
+					<label for="default-checkbox-3" class="ms-2 text-base font-medium text-white">3 Star Economy</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-4" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-4" class="ms-2 text-lg font-medium text-white">Villa</label>
+					<label for="default-checkbox-4" class="ms-2 text-base font-medium text-white">Villa</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-5" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-5" class="ms-2 text-lg font-medium text-white">Recommended hotel</label>
+					<label for="default-checkbox-5" class="ms-2 text-base font-medium text-white">Recommended hotel</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-6" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-6" class="ms-2 text-lg font-medium text-white">Room only</label>
+					<label for="default-checkbox-6" class="ms-2 text-base font-medium text-white">Room only</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-7" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-7" class="ms-2 text-lg font-medium text-white">Free breakfast</label>
+					<label for="default-checkbox-7" class="ms-2 text-base font-medium text-white">Free breakfast</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-8" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-8" class="ms-2 text-lg font-medium text-white">Free Cancellation</label>
+					<label for="default-checkbox-8" class="ms-2 text-base font-medium text-white">Free Cancellation</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-9" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-9" class="ms-2 text-lg font-medium text-white">Best value/promotion</label>
+					<label for="default-checkbox-9" class="ms-2 text-base font-medium text-white">Best value/promotion</label>
 				</div>
 			</div>
 		</div>
 
-		<!-- Card Accommodation -->
-		<div id="indicators-carousel" class="relative w-full" data-carousel="slide">
-			<!-- Carousel wrapper -->
-			<div class="relative rounded-lg overflow-hidden h-[450px] laptop:h-[700px]">
-				<!-- Item 1 -->
-				<div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out"
-					data-carousel-item="active">
-					<div
-						class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
-						<!-- Logo Hotel Here -->
-						<img src="" alt="">
-						<div
-							class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img src="img/thumbnail-accom.jfif" alt="">
-						</div>
-						<h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak
-							Beach</h3>
-						<p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
-							Indigo Bali
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-						<a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
-							href="#">Details</a>
+		<!-- Accommodation Container -->
+		<section class="card-container grid grid-cols-1 laptop:grid-cols-5 gap-8">
+			<div class="filter-box hidden laptop:flex flex-col gap-4 bg-dark p-6 rounded-xl">
+				<h3 class="text-white font-bold text-xl">Filter</h3>
+				<div class="filter-lists flex flex-col gap-2">
+					<div class="flex">
+						<input id="default-checkbox-1" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-1" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">5 Star Luxury</label>
 					</div>
-
-					<!-- Accommodation Image List Go Here -->
-					<div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
-						<div class="h-auto w-full overflow-hidden flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+					<div class="flex">
+						<input id="default-checkbox-2" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-2" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">4 Star Economy</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-3" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-3" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">3 Star Economy</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-4" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-4" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Villa</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-5" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-5" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Recommended hotel</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-6" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-6" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Room only</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-7" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-7" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Free breakfast</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-8" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-8" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Free Cancellation</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-9" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-9" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Best value/promotion</label>
+					</div>
+				</div>
+			</div>
+			<!-- Card Accommodation -->
+			<div class="card-lists grid grid-cols-1 tablet:grid-cols-2 gap-5 laptop:grid-cols-1 laptop:col-span-4">
+				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
+					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px]">
+						<img class="w-full h-full" src="img/thumbnail-accom.jfif" alt="hotel-img">
+					</div>
+					<div class="card-content flex flex-col gap-4">
+						<div class="card-title flex justify-between gap-4">
+							<a href="accommodation-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">COURTYARD BY MARRIOT BALI NUSA DUA RESORT</a>
+							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
+								<i class="fa-solid fa-star"></i>
+								5
+							</span>
 						</div>
-						<!-- Accommodation List Image here -->
-						<div class="img-list grid grid-cols-4">
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-1.jfif" alt="">
+						<p class="text-main">
+							<i class="fa-solid fa-location-dot text-main"></i>
+							Kuta Selatan, Kabupaten Badung, Bali
+						</p>
+						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
+							<div class="benefit flex flex-col gap-2">
+								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
+								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
+									<p>Deluxe Room</p>
+									<p>Multiple Bed Types</p>
+									<p class="text-green-500">Free Breakfast</p>
+									<p class="text-green-500">Free Cancellation</p>
+								</ul>
 							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-2.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-3.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-4.jfif" alt="">
+							<div class="price-btn flex flex-col items-end">
+								<h2 class="text-dark font-bold text-2xl laptop:text-3xl">$2,630</h2>
+								<span class="text-sm text-gray-400">Includes taxes and fees</span>
+								<a class="bg-main text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="accommodation-detail.html">See Availability</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Item 2 -->
-				<div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out"
-					data-carousel-item>
-					<div
-						class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
-						<!-- Logo Hotel Here -->
-						<img src="" alt="">
-						<div
-							class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img src="img/thumbnail-accom.jfif" alt="">
-						</div>
-						<h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak
-							Beach</h3>
-						<p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
-							Indigo Bali
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-						<a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
-							href="#">Details</a>
+				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
+					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px]">
+						<img class="w-full h-full" src="img/thumbnail-accom.jfif" alt="hotel-img">
 					</div>
-
-					<!-- Accommodation Image List Go Here -->
-					<div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
-						<div class="h-auto w-full overflow-hidden flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+					<div class="card-content flex flex-col gap-4">
+						<div class="card-title flex justify-between gap-4">
+							<a href="accommodation-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">COURTYARD BY MARRIOT BALI NUSA DUA RESORT</a>
+							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
+								<i class="fa-solid fa-star"></i>
+								5
+							</span>
 						</div>
-						<div class="img-list grid grid-cols-4">
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-1.jfif" alt="">
+						<p class="text-main">
+							<i class="fa-solid fa-location-dot text-main"></i>
+							Kuta Selatan, Kabupaten Badung, Bali
+						</p>
+						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
+							<div class="benefit flex flex-col gap-2">
+								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
+								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
+									<p>Deluxe Room</p>
+									<p>Multiple Bed Types</p>
+									<p class="text-green-500">Free Breakfast</p>
+									<p class="text-green-500">Free Cancellation</p>
+								</ul>
 							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-2.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-3.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-4.jfif" alt="">
+							<div class="price-btn flex flex-col items-end">
+								<h2 class="text-dark font-bold text-2xl laptop:text-3xl">$2,630</h2>
+								<span class="text-sm text-gray-400">Includes taxes and fees</span>
+								<a class="bg-main text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="accommodation-detail.html">See Availability</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Item 3 -->
-				<div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out"
-					data-carousel-item>
-					<div
-						class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
-						<!-- Logo Hotel Here -->
-						<img src="" alt="">
-						<div
-							class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img src="img/thumbnail-accom.jfif" alt="">
-						</div>
-						<h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak
-							Beach</h3>
-						<p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
-							Indigo Bali
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-						<a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
-							href="#">Details</a>
+				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
+					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px]">
+						<img class="w-full h-full" src="img/thumbnail-accom.jfif" alt="hotel-img">
 					</div>
-
-					<!-- Accommodation Image List Go Here -->
-					<div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
-						<div class="h-auto w-full overflow-hidden flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+					<div class="card-content flex flex-col gap-4">
+						<div class="card-title flex justify-between gap-4">
+							<a href="accommodation-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">COURTYARD BY MARRIOT BALI NUSA DUA RESORT</a>
+							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
+								<i class="fa-solid fa-star"></i>
+								5
+							</span>
 						</div>
-						<div class="img-list grid grid-cols-4">
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-1.jfif" alt="">
+						<p class="text-main">
+							<i class="fa-solid fa-location-dot text-main"></i>
+							Kuta Selatan, Kabupaten Badung, Bali
+						</p>
+						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
+							<div class="benefit flex flex-col gap-2">
+								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
+								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
+									<p>Deluxe Room</p>
+									<p>Multiple Bed Types</p>
+									<p class="text-green-500">Free Breakfast</p>
+									<p class="text-green-500">Free Cancellation</p>
+								</ul>
 							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-2.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-3.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-4.jfif" alt="">
+							<div class="price-btn flex flex-col items-end">
+								<h2 class="text-dark font-bold text-2xl laptop:text-3xl">$2,630</h2>
+								<span class="text-sm text-gray-400">Includes taxes and fees</span>
+								<a class="bg-main text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="accommodation-detail.html">See Availability</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Item 4 -->
-				<div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out"
-					data-carousel-item>
-					<div
-						class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
-						<!-- Logo Hotel Here -->
-						<img src="" alt="">
-						<div
-							class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img src="img/thumbnail-accom.jfif" alt="">
-						</div>
-						<h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak
-							Beach</h3>
-						<p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
-							Indigo Bali
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-						<a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
-							href="#">Details</a>
+				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
+					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px]">
+						<img class="w-full h-full" src="img/thumbnail-accom.jfif" alt="hotel-img">
 					</div>
-
-					<!-- Accommodation Image List Go Here -->
-					<div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
-						<div class="h-auto w-full overflow-hidden flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+					<div class="card-content flex flex-col gap-4">
+						<div class="card-title flex justify-between gap-4">
+							<a href="accommodation-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">COURTYARD BY MARRIOT BALI NUSA DUA RESORT</a>
+							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
+								<i class="fa-solid fa-star"></i>
+								5
+							</span>
 						</div>
-						<div class="img-list grid grid-cols-4">
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-1.jfif" alt="">
+						<p class="text-main">
+							<i class="fa-solid fa-location-dot text-main"></i>
+							Kuta Selatan, Kabupaten Badung, Bali
+						</p>
+						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
+							<div class="benefit flex flex-col gap-2">
+								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
+								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
+									<p>Deluxe Room</p>
+									<p>Multiple Bed Types</p>
+									<p class="text-green-500">Free Breakfast</p>
+									<p class="text-green-500">Free Cancellation</p>
+								</ul>
 							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-2.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-3.jfif" alt="">
-							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-4.jfif" alt="">
+							<div class="price-btn flex flex-col items-end">
+								<h2 class="text-dark font-bold text-2xl laptop:text-3xl">$2,630</h2>
+								<span class="text-sm text-gray-400">Includes taxes and fees</span>
+								<a class="bg-main text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="accommodation-detail.html">See Availability</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Item 5 -->
-				<div class="card-container rounded-lg overflow-hidden grid grid-cols-1 tablet:grid-cols-2 tablet:rounded-xl laptop:h-[700px] duration-700 ease-in-out"
-					data-carousel-item>
-					<div
-						class="card bg-white flex flex-col items-center gap-3 p-6 justify-center lg:p-10 laptop:px-40 laptop:gap-5">
-						<!-- Logo Hotel Here -->
-						<img src="" alt="">
-						<div
-							class="img-box h-32 laptop:h-72 w-full overflow-hidden rounded-md flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img src="img/thumbnail-accom.jfif" alt="">
-						</div>
-						<h3 class="text-xl text-center font-bold text-dark laptop:text-3xl">Hotel Indigo Bali Seminyak
-							Beach</h3>
-						<p class="text-md text-center text-dark laptop:text-xl">Experience World-class service at Hotel
-							Indigo Bali
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam! at Hotel Indigo</p>
-						<a class="bg-main w-full text-center text-base px-4 md:px-10 py-2 text-white rounded-lg duration-100 hover:bg-dark tablet:text-lg laptop:py-4 laptop:px-16 laptop:text-xl"
-							href="#">Details</a>
+				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
+					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px]">
+						<img class="w-full h-full" src="img/thumbnail-accom.jfif" alt="hotel-img">
 					</div>
-
-					<!-- Accommodation Image List Go Here -->
-					<div class="img hidden tablet:flex flex-col overflow-hidden bg-red-900">
-						<div class="h-auto w-full overflow-hidden flex items-center justify-center">
-							<!-- Accommodation Thumbnail Here -->
-							<img class="w-full" src="img/thumbnail-accom.jfif" alt="">
+					<div class="card-content flex flex-col gap-4">
+						<div class="card-title flex justify-between gap-4">
+							<a href="accommodation-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">COURTYARD BY MARRIOT BALI NUSA DUA RESORT</a>
+							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
+								<i class="fa-solid fa-star"></i>
+								5
+							</span>
 						</div>
-						<div class="img-list grid grid-cols-4">
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-1.jfif" alt="">
+						<p class="text-main">
+							<i class="fa-solid fa-location-dot text-main"></i>
+							Kuta Selatan, Kabupaten Badung, Bali
+						</p>
+						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
+							<div class="benefit flex flex-col gap-2">
+								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
+								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
+									<p>Deluxe Room</p>
+									<p>Multiple Bed Types</p>
+									<p class="text-green-500">Free Breakfast</p>
+									<p class="text-green-500">Free Cancellation</p>
+								</ul>
 							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-2.jfif" alt="">
+							<div class="price-btn flex flex-col items-end">
+								<h2 class="text-dark font-bold text-2xl laptop:text-3xl">$2,630</h2>
+								<span class="text-sm text-gray-400">Includes taxes and fees</span>
+								<a class="bg-main text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="accommodation-detail.html">See Availability</a>
 							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-3.jfif" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
+					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px]">
+						<img class="w-full h-full" src="img/thumbnail-accom.jfif" alt="hotel-img">
+					</div>
+					<div class="card-content flex flex-col gap-4">
+						<div class="card-title flex justify-between gap-4">
+							<a href="accommodation-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">COURTYARD BY MARRIOT BALI NUSA DUA RESORT</a>
+							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
+								<i class="fa-solid fa-star"></i>
+								5
+							</span>
+						</div>
+						<p class="text-main">
+							<i class="fa-solid fa-location-dot text-main"></i>
+							Kuta Selatan, Kabupaten Badung, Bali
+						</p>
+						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
+							<div class="benefit flex flex-col gap-2">
+								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
+								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
+									<p>Deluxe Room</p>
+									<p>Multiple Bed Types</p>
+									<p class="text-green-500">Free Breakfast</p>
+									<p class="text-green-500">Free Cancellation</p>
+								</ul>
 							</div>
-							<div class="w-full h-full overflow-hidden flex items-center justify-center">
-								<!-- Accommodation Thumbnail Here -->
-								<img class="w-full h-full" src="img/img-4.jfif" alt="">
+							<div class="price-btn flex flex-col items-end">
+								<h2 class="text-dark font-bold text-2xl laptop:text-3xl">$2,630</h2>
+								<span class="text-sm text-gray-400">Includes taxes and fees</span>
+								<a class="bg-main text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="accommodation-detail.html">See Availability</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Slider indicators -->
-			<div
-				class="absolute bg-dark py-2 px-4 rounded-md z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse -bottom-16 left-1/2">
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-					data-carousel-slide-to="0"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-					data-carousel-slide-to="1"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-					data-carousel-slide-to="2"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-					data-carousel-slide-to="3"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-					data-carousel-slide-to="4"></button>
-			</div>
-			<!-- Slider controls -->
-			<button type="button"
-				class="absolute top-0 -start-6 tablet:start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-				data-carousel-prev>
-				<span
-					class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-dark/30 group-hover:bg-dark/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-					<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-						xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="M5 1 1 5l4 4" />
-					</svg>
-					<span class="sr-only">Previous</span>
-				</span>
-			</button>
-			<button type="button"
-				class="absolute top-0 -end-6 tablet:end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-				data-carousel-next>
-				<span
-					class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-dark/30 group-hover:bg-dark/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-					<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-						xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="m1 9 4-4-4-4" />
-					</svg>
-					<span class="sr-only">Next</span>
-				</span>
-			</button>
-		</div>
+		</section>
 	</section>
 
 	<!-- Footer -->
@@ -842,7 +811,7 @@
 		<div
 			class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-10 items-start tablet:grid-cols-2 tablet:p-10 laptop:py-10 laptop:px-32">
 			<!-- Logo -->
-			<a href="index.html" class="flex items-center self-center">
+			<a href="index.html" class="flex items-center place-self-center laptop:place-self-start laptop:self-center">
 				<img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-52 tablet:w-60" />
 			</a>
 			<div class="content flex gap-5 justify-center tablet:flex-row laptop:gap-24">
