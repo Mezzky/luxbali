@@ -494,7 +494,7 @@
 
 		<!-- Drawer Filter -->
 		<div id="drawer-filter"
-			class="fixed top-0 left-0 z-40 h-screen pt-28 p-4 overflow-y-auto transition-transform -translate-x-full bg-dark w-80 laptop:hidden"
+			class="fixed flex flex-col gap-4 top-0 left-0 z-40 h-screen pt-28 p-4 overflow-y-auto transition-transform -translate-x-full bg-dark w-80 laptop:hidden"
 			tabindex="-1" aria-labelledby="drawer-label">
 			<h5 id="drawer-label"
 				class="inline-flex items-center mb-4 text-xl font-semibold text-gray-500"><svg
@@ -514,17 +514,10 @@
 			</button>
 
 			<div class="filter-lists flex flex-col gap-2">
+                <h4 class="text-white font-semibold">Popular filters</h4>
 				<div class="flex items-center">
 					<input id="default-checkbox-1" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-1" class="ms-2 text-base font-medium text-white">5 Star Luxury</label>
-				</div>
-				<div class="flex items-center">
-					<input id="default-checkbox-2" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-2" class="ms-2 text-base font-medium text-white">4 Star Economy</label>
-				</div>
-				<div class="flex items-center">
-					<input id="default-checkbox-3" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-3" class="ms-2 text-base font-medium text-white">3 Star Economy</label>
+					<label for="default-checkbox-1" class="ms-2 text-base font-medium text-white">5 Star</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-4" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
@@ -544,11 +537,43 @@
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-8" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
-					<label for="default-checkbox-8" class="ms-2 text-base font-medium text-white">Free Cancellation</label>
+					<label for="default-checkbox-8" class="ms-2 text-base font-medium text-white">Free cancellation</label>
 				</div>
 				<div class="flex items-center">
 					<input id="default-checkbox-9" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
 					<label for="default-checkbox-9" class="ms-2 text-base font-medium text-white">Best value/promotion</label>
+				</div>
+			</div>
+
+			<div class="filter-lists flex flex-col gap-2">
+                <h4 class="text-white font-semibold">Areas</h4>
+				<div class="flex items-center">
+					<input id="default-checkbox-1" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
+					<label for="default-checkbox-1" class="ms-2 text-base font-medium text-white">Ubud</label>
+				</div>
+				<div class="flex items-center">
+					<input id="default-checkbox-4" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
+					<label for="default-checkbox-4" class="ms-2 text-base font-medium text-white">Canggu</label>
+				</div>
+				<div class="flex items-center">
+					<input id="default-checkbox-5" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
+					<label for="default-checkbox-5" class="ms-2 text-base font-medium text-white">Seminyak</label>
+				</div>
+				<div class="flex items-center">
+					<input id="default-checkbox-6" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
+					<label for="default-checkbox-6" class="ms-2 text-base font-medium text-white">Jimbaran</label>
+				</div>
+                <div class="flex items-center">
+					<input id="default-checkbox-9" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
+					<label for="default-checkbox-9" class="ms-2 text-base font-medium text-white">Uluwatu</label>
+				</div>
+				<div class="flex items-center">
+					<input id="default-checkbox-7" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
+					<label for="default-checkbox-7" class="ms-2 text-base font-medium text-white">Kuta</label>
+				</div>
+				<div class="flex items-center">
+					<input id="default-checkbox-8" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main">
+					<label for="default-checkbox-8" class="ms-2 text-base font-medium text-white">Nusa dua</label>
 				</div>
 			</div>
 		</div>
@@ -558,17 +583,10 @@
 			<div class="filter-box hidden laptop:flex flex-col gap-4 bg-dark p-6 rounded-xl">
 				<h3 class="text-white font-bold text-xl">Filter</h3>
 				<div class="filter-lists flex flex-col gap-2">
+                    <h4 class="text-white font-semibold">Popular filters</h4>
 					<div class="flex">
 						<input id="default-checkbox-1" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
-						<label for="default-checkbox-1" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">5 Star Luxury</label>
-					</div>
-					<div class="flex">
-						<input id="default-checkbox-2" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
-						<label for="default-checkbox-2" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">4 Star Economy</label>
-					</div>
-					<div class="flex">
-						<input id="default-checkbox-3" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
-						<label for="default-checkbox-3" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">3 Star Economy</label>
+						<label for="default-checkbox-1" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">5 Star</label>
 					</div>
 					<div class="flex">
 						<input id="default-checkbox-4" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
@@ -588,11 +606,42 @@
 					</div>
 					<div class="flex">
 						<input id="default-checkbox-8" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
-						<label for="default-checkbox-8" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Free Cancellation</label>
+						<label for="default-checkbox-8" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Free cancellation</label>
 					</div>
 					<div class="flex">
 						<input id="default-checkbox-9" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
 						<label for="default-checkbox-9" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Best value/promotion</label>
+					</div>
+				</div>
+				<div class="filter-lists flex flex-col gap-2">
+                    <h4 class="text-white font-semibold">Areas</h4>
+					<div class="flex">
+						<input id="default-checkbox-1" type="checkbox" value=""  name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-1" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Ubud</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-4" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-4" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Canggu</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-5" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-5" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Seminyak</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-6" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-6" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Jimbaran</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-7" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-7" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Uluwatu</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-8" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-8" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Kuta</label>
+					</div>
+					<div class="flex">
+						<input id="default-checkbox-9" type="checkbox" value="" name="default-checkbox" class="w-4 h-4 text-main bg-gray-100 border-gray-300 focus:ring-main cursor-pointer">
+						<label for="default-checkbox-9" class="ms-2 cursor-pointer text-sm text-white desktop:text-md">Nusa dua</label>
 					</div>
 				</div>
 			</div>
