@@ -424,7 +424,7 @@
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#overview">Overview</a></li>
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#info-price">Info & Price</a></li>
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#facilities">Facilities</a></li>
-			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#house-rules">House Rules</a></li>
+			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#rules">House Rules</a></li>
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#comments">Comments</a></li>
 		</ul>
 
@@ -440,14 +440,14 @@
 	class="fixed top-0 left-0 z-40 h-screen pt-28 p-4 overflow-y-auto transition-transform -translate-x-full bg-dark w-80 tablet:hidden"
 	tabindex="-1" aria-labelledby="drawer-label">
 	<h5 id="drawer-label"
-		class="inline-flex items-center mb-4 text-xl font-semibold text-gray-500"><svg
+		class="inline-flex items-center mb-4 text-xl font-semibold text-dark"><svg
 			class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
 			viewBox="0 0 20 20">
 			<path
 				d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
 		</svg>Navigation</h5>
 	<button type="button" data-drawer-hide="drawer-menu" aria-controls="drawer-menu"
-		class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-28 end-2.5 flex items-center justify-center">
+		class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-dark rounded-lg text-sm w-8 h-8 absolute top-28 end-2.5 flex items-center justify-center">
 		<svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
 			viewBox="0 0 14 14">
 			<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -461,13 +461,14 @@
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#overview">Overview</a></li>
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#info-price">Info & Price</a></li>
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#facilities">Facilities</a></li>
-			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#house-rules">House Rules</a></li>
+			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#rules">House Rules</a></li>
 			<li><a class="py-2 px-6 rounded-md hover:bg-main hover:text-white duration-200" href="#comments">Comments</a></li>
 		</ul>
 	</div>
 	</div>
 
-    <section id="overview" class="accommodation-container w-full p-5 flex flex-col gap-4 pb-16 tablet:py-12 laptop:px-32">
+    <!-- Overview -->
+    <section id="overview" class="accommodation-container w-full p-5 flex flex-col gap-4 tablet:py-12 laptop:px-32">
 		<!-- Accommodation Name -->
 		<div class="flex flex-col gap-4 tablet:flex-row tablet:justify-between">
 			<div class="name flex flex-col gap-2">
@@ -487,7 +488,7 @@
 			<div class="rate flex gap-3 items-center">
 				<div class="text">
 					<h6 class="text-dark font-medium">Very Good</h6>
-					<span class="text-gray-500 text-sm">100 Reviews</span>
+					<span class="text-dark text-sm">100 Reviews</span>
 				</div>
 				<h5 class="py-2 px-4 rounded-md bg-main text-white font-bold w-max laptop:text-xl">8.5</h5>
 			</div>
@@ -512,12 +513,12 @@
 				<div class="w-full h-full laptop:h-52 overflow-hidden flex items-center justify-center rounded-lg relative">
 					<!-- Accommodation Thumbnail Here -->
 					<img class="w-full h-auto" src="img/img-accom-4.png" alt="">
-					<div class="overlay absolute w-full h-full bg-black/30"></div>
-					<a class="absolute text-white font-semibold laptop:text-2xl" href="">+ 35 Photo</a>
+					<div class="overlay absolute w-full h-full bg-black/50"></div>
+					<button data-modal-target="room-modal" data-modal-toggle="room-modal" class="absolute text-white font-semibold tablet:text-2xl laptop:text-3xl hover:underline" type="button">+ 35 Photo</button>
 				</div>
 				<div class="w-full h-32 tablet:h-auto laptop:h-52 overflow-hidden flex items-center justify-center rounded-lg col-span-3 tablet:col-span-1">
 					<!-- Accommodation Thumbnail Here -->
-					<img class="w-full tablet:h-full" src="img/gmap-img.png" alt="">
+					<img class="w-full tablet:h-auto" src="img/gmap-img.png" alt="">
 					<div class="maplink flex flex-col justify-center items-center gap-2 absolute">
 						<p class="text-accent text-4xl">
 							<i class="fa-solid fa-location-dot"></i>
@@ -527,7 +528,409 @@
 				</div>
 			</div>
 		</div>
+
+        <!-- Accommodation Image modal -->
+        <div id="room-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-7xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                        <h3 class="text-xl font-semibold text-dark">
+                            Room Details
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-dark rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="room-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal Content -->
+                    <div class="modal-content grid grid-cols-1 tablet:grid-cols-2">
+                        <!-- Modal Carousel -->
+                        <div id="indicators-carousel" class="relative w-full bg-dark" data-carousel="static">
+                            <!-- Carousel wrapper -->
+                            <div class="relative h-56 overflow-hidden md:h-96">
+                                <!-- Item 1 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                    <img src="img/img-accom-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="img/img-accom-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="img/img-accom-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="img/img-accom-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="img/img-accom-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                            </div>
+                            <!-- Slider indicators -->
+                            <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                            </div>
+                            <!-- Slider controls -->
+                            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-4 md:p-5 space-y-4">
+                            <p class="text-base leading-relaxed text-dark">
+                                With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                            </p>
+                            <p class="text-base leading-relaxed text-dark">
+                                The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                            </p>
+                            <p class="text-base leading-relaxed text-dark">
+                                The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accommodation Descriptions -->
+        <div class="description w-full grid grid-cols-1 tablet:grid-cols-3 gap-4 laptop:grid-cols-4">
+            <div class="content flex flex-col gap-2 tablet:col-span-2 laptop:col-span-3">
+                <h3 class="text-xl font-bold laptop:text-3xl">Description</h3>
+                <p class="text-base leading-relaxed text-dark laptop:text-lg">
+                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                </p>
+                <p class="text-base leading-relaxed text-dark laptop:text-lg">
+                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                </p>
+                <p class="text-base leading-relaxed text-dark laptop:text-lg">
+                    Your journey with Equator Fast Cruise is not just about exploring new destinations; it's about creating memories that last a lifetime. Whether it's snorkelling with vibrant marine life, relaxing on pristine beaches, or simply taking in the stunning views, every moment promises to be exceptional.
+                </p>
+            </div>
+
+            <!-- API Price Select -->
+            <div class="api-choose w-full grid grid-cols-1 gap-2 md:grid-cols-2 tablet:col-span-1 tablet:grid-cols-1 overflow-y-scroll h-80">
+                <div class="api-box w-full flex flex-col gap-2 p-4 rounded-lg bg-white">
+                    <h4 class="text-dark font-bold text-lg">LuxBali Price</h4>
+                    <p class="text-dark font-medium flex flex-col">Perfect for 1-night stay! <span class="font-bold">$2,630</span></p>
+                    <button class="bg-main w-full text-white py-2 rounded-lg hover:bg-accent duration-200 text-center font-semibold" type="button">See Price</button>
+                </div>
+                <div class="api-box w-full flex flex-col gap-2 p-4 rounded-lg bg-white">
+                    <h4 class="text-dark font-bold text-lg">API 1 Price</h4>
+                    <p class="text-dark font-medium flex flex-col">Perfect for 1-night stay! <span class="font-bold">$2,630</span></p>
+                    <button class="bg-main w-full text-white py-2 rounded-lg hover:bg-accent duration-200 text-center font-semibold" type="button">See Price</button>
+                </div>
+                <div class="api-box w-full flex flex-col gap-2 p-4 rounded-lg bg-white">
+                    <h4 class="text-dark font-bold text-lg">API 2 Price</h4>
+                    <p class="text-dark font-medium flex flex-col">Perfect for 1-night stay! <span class="font-bold">$2,630</span></p>
+                    <button class="bg-main w-full text-white py-2 rounded-lg hover:bg-accent duration-200 text-center font-semibold" type="button">See Price</button>
+                </div>
+                <div class="api-box w-full flex flex-col gap-2 p-4 rounded-lg bg-white">
+                    <h4 class="text-dark font-bold text-lg">API 3 Price</h4>
+                    <p class="text-dark font-medium flex flex-col">Perfect for 1-night stay! <span class="font-bold">$2,630</span></p>
+                    <button class="bg-main w-full text-white py-2 rounded-lg hover:bg-accent duration-200 text-center font-semibold" type="button">See Price</button>
+                </div>
+            </div>
+        </div>
 	</section>
+
+    <!-- Info Price -->
+    <section id="info-price" class="accommodation-container w-full px-5 flex flex-col gap-4 tablet:pb-12 laptop:px-32">
+        <h3 class="text-xl font-bold laptop:text-3xl">Accommodation Product Lists</h3>
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-base laptop:text-xl text-left rtl:text-right text-dark">
+                <thead class="text-center text-white font-semibold bg-main">
+                    <tr class="border-b border-t border-dark">
+                        <th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
+                            Room type
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
+                            Number of guests
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
+                            Today's price
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
+                            Your choices
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
+                            Select amount
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
+                            Reserve
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b border-dark">
+                        <td scope="col" class="p-4 border-r border-l laptop:border-2 border-dark align-top text-daark whitespace-nowrap">
+                            <p class="font-bold">Deluxe Room</p>
+                            <div class="flex flex-col">
+                                <ul class="font-normal">
+                                    <li>- 1 king bed</li>
+                                    <li>- 2 king beds</li>
+                                </ul>
+                                <p class="font-normal">Free crib available on request</p>
+                            </div>
+                            <div class="benefits flex flex-wrap gap-2">
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-house"></i> 
+                                    38 m²
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-map"></i> 
+                                    Balcony
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-leaf"></i> 
+                                    Garden view
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-snowflake"></i> 
+                                    Air conditioning
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-wifi"></i> 
+                                    Free wi-fi
+                                </p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <i class="fa-solid fa-user text-dark"></i>
+                            <i class="fa-solid fa-user text-dark"></i>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <div class="flex flex-col gap-2">
+                                <p class="font-semibold">$2999</p>
+                                <p class="text-sm font-semibold text-gray-600">includes tax and charges</p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <div class="flex flex-col gap-1">
+                                <p class="font-semibold">Breakfast included</p>
+                                <p class="font-semibold">Non-refundable</p>
+                                <p class="font-semibold">Pay later</p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <select class="w-full rounded-md p-2" name="amount" id="amount">
+                                <option selected value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </td>
+                        <td rowspan="3" class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <button class="bg-accent w-max tablet:w-full text-white p-4 rounded-lg hover:bg-main duration-200 text-center font-semibold" type="button">I'll Reserve</button>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b border-dark">
+                        <td scope="col" class="p-4 border-r border-l laptop:border-2 border-dark align-top text-daark whitespace-nowrap">
+                            <p class="font-bold">Deluxe Room</p>
+                            <div class="flex flex-col">
+                                <ul class="font-normal">
+                                    <li>- 1 king bed</li>
+                                    <li>- 2 king beds</li>
+                                </ul>
+                                <p class="font-normal">Free crib available on request</p>
+                            </div>
+                            <div class="benefits flex flex-wrap gap-2">
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-house"></i> 
+                                    38 m²
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-map"></i> 
+                                    Balcony
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-leaf"></i> 
+                                    Garden view
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-snowflake"></i> 
+                                    Air conditioning
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-wifi"></i> 
+                                    Free wi-fi
+                                </p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <i class="fa-solid fa-user text-dark"></i>
+                            <i class="fa-solid fa-user text-dark"></i>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <div class="flex flex-col gap-2">
+                                <p class="font-semibold">$2999</p>
+                                <p class="text-sm font-semibold text-gray-600">includes tax and charges</p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <div class="flex flex-col gap-1">
+                                <p class="font-semibold">Breakfast included</p>
+                                <p class="font-semibold">Non-refundable</p>
+                                <p class="font-semibold">Pay later</p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <select class="w-full rounded-md p-2" name="amount" id="amount">
+                                <option selected value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b border-dark">
+                        <td scope="col" class="p-4 border-r border-l laptop:border-2 border-dark align-top text-daark whitespace-nowrap">
+                            <p class="font-bold">Deluxe Room</p>
+                            <div class="flex flex-col">
+                                <ul class="font-normal">
+                                    <li>- 1 king bed</li>
+                                    <li>- 2 king beds</li>
+                                </ul>
+                                <p class="font-normal">Free crib available on request</p>
+                            </div>
+                            <div class="benefits flex flex-wrap gap-2">
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-house"></i> 
+                                    38 m²
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-map"></i> 
+                                    Balcony
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-leaf"></i> 
+                                    Garden view
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-snowflake"></i> 
+                                    Air conditioning
+                                </p>
+                                <p class="flex gap-1 items-center">
+                                    <i class="fa-solid fa-wifi"></i> 
+                                    Free wi-fi
+                                </p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <i class="fa-solid fa-user text-dark"></i>
+                            <i class="fa-solid fa-user text-dark"></i>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <div class="flex flex-col gap-2">
+                                <p class="font-semibold">$2999</p>
+                                <p class="text-sm font-semibold text-gray-600">includes tax and charges</p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <div class="flex flex-col gap-1">
+                                <p class="font-semibold">Breakfast included</p>
+                                <p class="font-semibold">Non-refundable</p>
+                                <p class="font-semibold">Pay later</p>
+                            </div>
+                        </td>
+                        <td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+                            <select class="w-full rounded-md p-2" name="amount" id="amount">
+                                <option selected value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section id="facilities" class="accommodation-container w-full p-5 flex flex-col gap-4 laptop:px-32">
+        <div class="title flex flex-col gap-2">
+            <h3 class="text-xl font-bold laptop:text-3xl">Facilities of this Acccommodation</h3>
+            <p class="text-dark text-lg">Great Facilities!</p>
+            <div class="flex flex-wrap gap-3">
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Outdoor swimming pool</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Free Wi-Fi</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Airport shuttle</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Family room</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Gym center</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Spa</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Non-smoking rooms</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Free parking</p>
+                </div>
+                <div class="facilities rounded-lg p-3 flex items-center gap-2 font-semibold border border-dark bg-white">
+                    <i class="fa-solid fa-person-swimming text-accent"></i>
+                    <p class="text-main">Restaurant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rules -->
+    <section id="rules" class="accommodation-container w-full p-5 flex flex-col gap-4 pb-16 laptop:px-32">
+        <h3 class="text-xl font-bold laptop:text-3xl">House Rules</h3>
+        <div class="description-rules p-6 rounded-xl w-full bg-white border border-dark overflow-y-scroll h-80">
+            <p class="text-dark text-lg tablet:text-xl">- Infants (1-2years old) are free of charge, children are between 3-10 years old, and adult is above 10 years old.
+                - Cancellation:
+                a. cancellation which is made within 48 hours prior arrival will be charged 50% of total transaction.
+                b. cancellation which is made within 24 hours prior arrival will be full charged from original booking.
+                - Guests who are pregnant and have serious chronic illness such as heart attack, asthma, emphysema, tuberculosis, respiratory problems and other chronic illnesses must not cruise and join water sport activities. For these conditions, the guests must report their conditions to our staff or crews.
+                </p>
+        </div>
+    </section>
 
     <!-- Footer -->
 	<footer>
