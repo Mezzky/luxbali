@@ -38,7 +38,7 @@
 						danger: '#FF5B5B',
 					},
 					backgroundImage: {
-						"hero": "url('./img/attraction-title.png')",
+						"hero": "url('./img/transport-title.png')",
 					},
 				},
 			},
@@ -423,8 +423,8 @@
 		<!-- Overlay Content -->
 		<div class="absolute inset-0 z-10 w-full h-full bg-black/40 flex items-end justify-center">
 			<h1 class="text-white flex flex-col items-center uppercase mb-16 laptop:mb-44 text-center text-lg font-bold laptop:text-4xl w-max">
-				attraction
-				<span class="text-sm mt-2">luxbali > attraction</span>
+				transport
+				<span class="text-sm mt-2">luxbali > transport</span>
 			</h1>
 		</div>
 	</section>
@@ -436,27 +436,42 @@
                     class="bg-white py-6 px-6 flex flex-col gap-2 tablet:flex-row tablet:px-12 tablet:w-full laptop:px-52 desktop:px-72"
                     action="">
                     <div class="input-box flex flex-col w-full">
-                        <label for="attraction" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Search
-                            Attraction</label>
-                        <input type="text" id="attraction"
+                        <label for="transport" class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Search
+                            Transportation</label>
+                        <input type="text" id="transport"
                             class="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 laptop:text-md"
-                            placeholder="Search Activity" required />
+                            placeholder="Search Transport" required />
                     </div>
                     <div class="input-box flex flex-col w-full">
-                        <label for="datepicker-attraction"
+                        <label for="date-range-transport"
                             class="block mb-2 text-sm font-medium text-dark laptop:text-lg">Traveling
-                            Date</label>
-                        <div class="relative w-full">
-                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                </svg>
+                            Period</label>
+                        <div id="date-range-transport" date-rangepicker class="flex items-center w-full">
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                </div>
+                                <input id="datepicker-range-transport" name="start" required type="text"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                                    placeholder="Select date start">
                             </div>
-                            <input datepicker id="datepicker-attraction" required type="text"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-                                placeholder="Select date">
+                            <span class="mx-2 text-gray-500">to</span>
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                </div>
+                                <input id="datepicker-range-transport" name="end" required type="text"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                                    placeholder="Select date end">
+                            </div>
                         </div>
                     </div>
                     <button type="submit"
@@ -465,22 +480,11 @@
 		</div>
 	</div>
 
-	<!-- Custom Package -->
-	<!-- <div class="bg-white py-6 px-6 flex flex-col tablet:flex-row gap-2 items-center tablet:flex-row tablet:px-12 tablet:w-full laptop:px-52 desktop:px-72">
-		<div class="text-dark flex flex-col items-center tablet:items-start gap-2">
-			<h2 class="font-bold text-xl text-center tablet:text-left">You can try Our Special Feature</h2>
-			<p class="text-center tablet:text-left">Create Your Custom Travel Package: At LuxBali, we provide you with the flexibility to design your own travel experience by selecting from our comprehensive range of travel services and destinations.</p>
-		</div>
-		<a class="bg-green-500 mt-4 tablet:mt-0 text-white font-bold p-4 rounded-lg text-center w-full tablet:w-max" href="custom-package.html">
-			Make Your Own Package!
-		</a>
-	</div> -->
-
-	<!-- Attraction Section -->
-	<section class="attraction-container w-full px-5 flex flex-col gap-8 pt-8 pb-24 tablet:px-12 laptop:px-52 desktop:px-72">
+	<!-- Transport Section -->
+	<section class="transport-container w-full px-5 flex flex-col gap-8 pt-8 pb-24 tablet:px-12 laptop:px-52 desktop:px-72">
 		<!-- Title -->
 		<div class="title relative flex flex-col w-full gap-2">
-			<h2 class="text-dark text-lg font-bold tablet:text-xl laptop:text-4xl">Attraction Product Lists</h2>
+			<h2 class="text-dark text-lg font-bold tablet:text-xl laptop:text-4xl">Transportation Product Lists</h2>
 			<button class="font-semibold border-2 border-main w-full p-4 text-center text-main rounded-lg duration-100 hover:bg-white laptop:hidden" data-drawer-target="drawer-filter" data-drawer-show="drawer-filter"
 			aria-controls="drawer-filter">
 				<i class="fa-solid fa-filter"></i>
@@ -574,7 +578,7 @@
 			</div>
 		</div>
 
-		<!-- Attraction Container -->
+		<!-- Transport Container -->
 		<section class="card-container grid grid-cols-1 laptop:grid-cols-5 gap-8">
 			<div class="filter-box hidden laptop:flex flex-col gap-4 bg-dark p-6 rounded-xl">
 				<h3 class="text-white font-bold text-xl">Filter</h3>
@@ -641,189 +645,16 @@
 					</div>
 				</div>
 			</div>
-			<!-- Card Attraction -->
+			<!-- Card Transport -->
 			<div class="card-lists grid grid-cols-1 tablet:grid-cols-2 gap-5 laptop:grid-cols-1 laptop:col-span-4">
-				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
-					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px] bg-black">
-						<img class="w-full h-full" src="img/attraction-thumbnail.png" alt="attraction-img">
+				<div class="card bg-white p-6 rounded-xl grid grid-cols-1 gap-4 laptop:grid-cols-3 laptop:items-center laptop:p-6 laptop:justify-between laptop:h-max">
+					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px] laptop:col-span-1">
+						<img class="w-full h-full" src="img/transport-thumbnail.png" alt="transport-img">
 					</div>
-					<div class="card-content flex flex-col gap-4">
-						<div class="card-title flex justify-between gap-4">
-							<a href="atraction-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">BALI UBUD TOUR - AYUNG RIVER WATER RAFTING </a>
-							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
-								<i class="fa-solid fa-star"></i>
-								5
-							</span>
-						</div>
-						<p class="text-main">
-							<i class="fa-solid fa-location-dot text-main"></i>
-							Kuta Selatan, Kabupaten Badung, Bali
-						</p>
-						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
-							<div class="benefit flex flex-col gap-2">
-								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
-								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
-									<p>Deluxe Room</p>
-									<p>Multiple Bed Types</p>
-									<p class="text-green-500">Free Breakfast</p>
-									<p class="text-green-500">Free Cancellation</p>
-								</ul>
-							</div>
-							<div class="price-btn flex flex-col items-end">
-								<h2 class="text-dark font-bold text-2xl laptop:text-3xl"><span class="text-sm laptop:text-lg text-gray-500">Start from </span>$630</h2>
-								<span class="text-sm text-gray-400">Includes taxes and fees</span>
-								<a class="bg-main w-full text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="atraction-detail.html">See Availability</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
-					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px] bg-black">
-						<img class="w-full h-full" src="img/attraction-thumbnail.png" alt="attraction-img">
-					</div>
-					<div class="card-content flex flex-col gap-4">
-						<div class="card-title flex justify-between gap-4">
-							<a href="atraction-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">BALI UBUD TOUR - AYUNG RIVER WATER RAFTING </a>
-							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
-								<i class="fa-solid fa-star"></i>
-								5
-							</span>
-						</div>
-						<p class="text-main">
-							<i class="fa-solid fa-location-dot text-main"></i>
-							Kuta Selatan, Kabupaten Badung, Bali
-						</p>
-						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
-							<div class="benefit flex flex-col gap-2">
-								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
-								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
-									<p>Deluxe Room</p>
-									<p>Multiple Bed Types</p>
-									<p class="text-green-500">Free Breakfast</p>
-									<p class="text-green-500">Free Cancellation</p>
-								</ul>
-							</div>
-							<div class="price-btn flex flex-col items-end">
-								<h2 class="text-dark font-bold text-2xl laptop:text-3xl"><span class="text-sm laptop:text-lg text-gray-500">Start from </span>$630</h2>
-								<span class="text-sm text-gray-400">Includes taxes and fees</span>
-								<a class="bg-main w-full text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="atraction-detail.html">See Availability</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
-					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px] bg-black">
-						<img class="w-full h-full" src="img/attraction-thumbnail.png" alt="attraction-img">
-					</div>
-					<div class="card-content flex flex-col gap-4">
-						<div class="card-title flex justify-between gap-4">
-							<a href="atraction-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">BALI UBUD TOUR - AYUNG RIVER WATER RAFTING </a>
-							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
-								<i class="fa-solid fa-star"></i>
-								5
-							</span>
-						</div>
-						<p class="text-main">
-							<i class="fa-solid fa-location-dot text-main"></i>
-							Kuta Selatan, Kabupaten Badung, Bali
-						</p>
-						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
-							<div class="benefit flex flex-col gap-2">
-								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
-								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
-									<p>Deluxe Room</p>
-									<p>Multiple Bed Types</p>
-									<p class="text-green-500">Free Breakfast</p>
-									<p class="text-green-500">Free Cancellation</p>
-								</ul>
-							</div>
-							<div class="price-btn flex flex-col items-end">
-								<h2 class="text-dark font-bold text-2xl laptop:text-3xl"><span class="text-sm laptop:text-lg text-gray-500">Start from </span>$630</h2>
-								<span class="text-sm text-gray-400">Includes taxes and fees</span>
-								<a class="bg-main w-full text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="atraction-detail.html">See Availability</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
-					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px] bg-black">
-						<img class="w-full h-full" src="img/attraction-thumbnail.png" alt="attraction-img">
-					</div>
-					<div class="card-content flex flex-col gap-4">
-						<div class="card-title flex justify-between gap-4">
-							<a href="atraction-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">BALI UBUD TOUR - AYUNG RIVER WATER RAFTING </a>
-							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
-								<i class="fa-solid fa-star"></i>
-								5
-							</span>
-						</div>
-						<p class="text-main">
-							<i class="fa-solid fa-location-dot text-main"></i>
-							Kuta Selatan, Kabupaten Badung, Bali
-						</p>
-						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
-							<div class="benefit flex flex-col gap-2">
-								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
-								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
-									<p>Deluxe Room</p>
-									<p>Multiple Bed Types</p>
-									<p class="text-green-500">Free Breakfast</p>
-									<p class="text-green-500">Free Cancellation</p>
-								</ul>
-							</div>
-							<div class="price-btn flex flex-col items-end">
-								<h2 class="text-dark font-bold text-2xl laptop:text-3xl"><span class="text-sm laptop:text-lg text-gray-500">Start from </span>$630</h2>
-								<span class="text-sm text-gray-400">Includes taxes and fees</span>
-								<a class="bg-main w-full text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="atraction-detail.html">See Availability</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
-					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px] bg-black">
-						<img class="w-full h-full" src="img/attraction-thumbnail.png" alt="attraction-img">
-					</div>
-					<div class="card-content flex flex-col gap-4">
-						<div class="card-title flex justify-between gap-4">
-							<a href="atraction-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">BALI UBUD TOUR - AYUNG RIVER WATER RAFTING </a>
-							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
-								<i class="fa-solid fa-star"></i>
-								5
-							</span>
-						</div>
-						<p class="text-main">
-							<i class="fa-solid fa-location-dot text-main"></i>
-							Kuta Selatan, Kabupaten Badung, Bali
-						</p>
-						<div class="benefit-container flex flex-col gap-2 laptop:flex-row laptop:justify-between">
-							<div class="benefit flex flex-col gap-2">
-								<h2 class="text-xl text-dark font-bold laptop:text-xl">Benefit:</h2>
-								<ul class="benefit-lists flex flex-col border-l-2 border-main pl-4 text-dark font-medium laptop:text-sm">
-									<p>Deluxe Room</p>
-									<p>Multiple Bed Types</p>
-									<p class="text-green-500">Free Breakfast</p>
-									<p class="text-green-500">Free Cancellation</p>
-								</ul>
-							</div>
-							<div class="price-btn flex flex-col items-end">
-								<h2 class="text-dark font-bold text-2xl laptop:text-3xl"><span class="text-sm laptop:text-lg text-gray-500">Start from </span>$630</h2>
-								<span class="text-sm text-gray-400">Includes taxes and fees</span>
-								<a class="bg-main w-full text-white py-4 px-12 rounded-lg mt-4 hover:bg-accent duration-200 text-center font-semibold" href="atraction-detail.html">See Availability</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card bg-white p-6 rounded-xl flex flex-col gap-4 laptop:flex-row laptop:items-center laptop:p-8 laptop:justify-center laptop:gap-8 laptop:items-center laptop:h-max">
-					<div class="img-box justify-center rounded-lg overflow-hidden laptop:w-[300px] bg-black">
-						<img class="w-full h-full" src="img/attraction-thumbnail.png" alt="attraction-img">
-					</div>
-					<div class="card-content flex flex-col gap-4">
-						<div class="card-title flex justify-between gap-4">
-							<a href="atraction-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">BALI UBUD TOUR - AYUNG RIVER WATER RAFTING </a>
-							<span class="text-accent font-bold text-2xl flex flex-row items-center gap-2 laptop:text-4xl">
-								<i class="fa-solid fa-star"></i>
-								5
-							</span>
+					<div class="card-content flex flex-col gap-4 laptop:ml-6 laptop:col-span-2">
+						<div class="card-title flex items-center justify-between gap-4">
+							<a href="atraction-detail.html" class="text-main font-bold text-md hover:text-accent laptop:text-2xl">TOYOTA HIACE PREMIO</a>
+							<p class="px-4 py-2 rounded-md bg-accent text-white font-semibold">Free Pickup</p>
 						</div>
 						<p class="text-main">
 							<i class="fa-solid fa-location-dot text-main"></i>
