@@ -522,215 +522,212 @@
 		<section id="history-table" class="history-container w-full flex flex-col gap-4 tablet:pb-12">
 			<div class="relative overflow-x-auto">
 				<table class="w-full text-base laptop:text-xl text-left rtl:text-right text-dark">
-					<thead class="text-center text-white font-semibold bg-main">
+					<thead class="text-center text-white font-light bg-main">
 						<tr class="border-b border-t border-dark">
 							<th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
-								Room type
+								Booking Details
 							</th>
 							<th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
-								Number of guests
+								Guests Details
 							</th>
 							<th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
-								Today's price
+								Prices
 							</th>
 							<th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
-								Your choices
+								Status
 							</th>
 							<th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
-								Select amount
-							</th>
-							<th scope="col" class="px-6 py-3 border-r border-l border-dark laptop:border-2">
-								Reserve
+								Action
 							</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="bg-white border-b border-dark">
 							<td scope="col"
-								class="p-4 border-r border-l laptop:border-2 border-dark align-top text-daark whitespace-nowrap">
-								<p class="font-bold">Deluxe Room</p>
-								<div class="flex flex-col">
-									<ul class="font-normal">
-										<li>- 1 king bed</li>
-										<li>- 2 king beds</li>
-									</ul>
-									<p class="font-normal">Free crib available on request</p>
+								class="p-4 border-r border-l laptop:border-2 border-dark align-top text-dark whitespace-nowrap">
+								<h3 class="font-bold text-xl">Alaya Hotel Resort</h3>
+								<p class="font-semibold">Deluxe Room</p>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Check in - Check out:</p>
+									<p>11 Nov 2024 - 12 Nov 2024</p>
 								</div>
-								<div class="benefits flex flex-wrap gap-2">
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-house"></i>
-										38 m²
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-map"></i>
-										Balcony
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-leaf"></i>
-										Garden view
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-snowflake"></i>
-										Air conditioning
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-wifi"></i>
-										Free wi-fi
-									</p>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Booked:</p>
+									<p>10 Nov 2024</p>
 								</div>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<i class="fa-solid fa-user text-dark"></i>
-								<i class="fa-solid fa-user text-dark"></i>
+								<h3 class="font-bold text-xl">Muhammad Ali</h3>
+								<ul class="flex flex-col mt-2 text-sm list-inside list-disc">
+									<li>Room 1 (2 Adults)</li>
+									<li>Room 2 (2 Adults)</li>
+									<li>Room 3 (2 Adults)</li>
+									<li>Room 4 (2 Adults)</li>
+									<li>Room 5 (2 Adults)</li>
+								</ul>
+								<p class="font-semibold text-sm text-green-500 mt-2">10 Guests</p>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
 								<div class="flex flex-col gap-2">
-									<p class="font-semibold">$2999</p>
+									<p class="font-semibold">IDR 15,000,000</p>
 									<p class="text-sm font-semibold text-gray-600">includes tax and charges</p>
 								</div>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<div class="flex flex-col gap-1">
-									<p class="font-semibold">Breakfast included</p>
-									<p class="font-semibold">Non-refundable</p>
-									<p class="font-semibold">Pay later</p>
-								</div>
+								<div class="flex flex-col gap-1 items-center">
+									<p class="font-semibold text-green-500">Paid</p>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<select class="w-full rounded-md p-2" name="amount" id="amount">
-									<option selected value="">0</option>
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-								</select>
-							</td>
-							<td rowspan="3" class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<button
-									class="bg-accent w-max tablet:w-full text-white p-4 rounded-lg hover:bg-main duration-200 text-center font-semibold"
-									type="button">I'll Reserve</button>
+								<div class="flex gap-2">
+									<a href="accommodation-detail.html" class="w-full p-3 text-white rounded-lg bg-dark hover:bg-slate-500 duration-100 text-center">
+										See Details
+									</a>
+									<button class="w-full p-3 text-white rounded-lg bg-danger hover:bg-red-400 duration-100 text-center" type="button">
+										Cancel Booking
+									</button>
+								</div>
+								<p class="text-danger mt-2 text-base">Last Cancellation Date: 22 Dec 2024</p>
 							</td>
 						</tr>
 						<tr class="bg-white border-b border-dark">
 							<td scope="col"
-								class="p-4 border-r border-l laptop:border-2 border-dark align-top text-daark whitespace-nowrap">
-								<p class="font-bold">Deluxe Room</p>
-								<div class="flex flex-col">
-									<ul class="font-normal">
-										<li>- 1 king bed</li>
-										<li>- 2 king beds</li>
-									</ul>
-									<p class="font-normal">Free crib available on request</p>
+								class="p-4 border-r border-l laptop:border-2 border-dark align-top text-dark whitespace-nowrap">
+								<h3 class="font-bold text-xl">Alaya Hotel Resort</h3>
+								<p class="font-semibold">Deluxe Room</p>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Check in - Check out:</p>
+									<p>11 Nov 2024 - 12 Nov 2024</p>
 								</div>
-								<div class="benefits flex flex-wrap gap-2">
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-house"></i>
-										38 m²
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-map"></i>
-										Balcony
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-leaf"></i>
-										Garden view
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-snowflake"></i>
-										Air conditioning
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-wifi"></i>
-										Free wi-fi
-									</p>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Booked:</p>
+									<p>10 Nov 2024</p>
 								</div>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<i class="fa-solid fa-user text-dark"></i>
-								<i class="fa-solid fa-user text-dark"></i>
+								<h3 class="font-bold text-xl">Muhammad Ali</h3>
+								<ul class="flex flex-col mt-2 text-sm list-inside list-disc">
+									<li>Room 1 (2 Adults)</li>
+									<li>Room 2 (2 Adults)</li>
+									<li>Room 3 (2 Adults)</li>
+									<li>Room 4 (2 Adults)</li>
+									<li>Room 5 (2 Adults)</li>
+								</ul>
+								<p class="font-semibold text-sm text-green-500 mt-2">10 Guests</p>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
 								<div class="flex flex-col gap-2">
-									<p class="font-semibold">$2999</p>
+									<p class="font-semibold">IDR 15,000,000</p>
 									<p class="text-sm font-semibold text-gray-600">includes tax and charges</p>
 								</div>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<div class="flex flex-col gap-1">
-									<p class="font-semibold">Breakfast included</p>
-									<p class="font-semibold">Non-refundable</p>
-									<p class="font-semibold">Pay later</p>
-								</div>
+								<div class="flex flex-col gap-1 items-center">
+									<p class="font-semibold text-green-500">Paid</p>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<select class="w-full rounded-md p-2" name="amount" id="amount">
-									<option selected value="">0</option>
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-								</select>
+								<div class="flex gap-2">
+									<a href="accommodation-detail.html" class="w-full p-3 text-white rounded-lg bg-dark hover:bg-slate-500 duration-100 text-center">
+										See Details
+									</a>
+									<button class="w-full p-3 text-white rounded-lg bg-danger hover:bg-red-400 duration-100 text-center" type="button">
+										Cancel Booking
+									</button>
+								</div>
+								<p class="text-danger mt-2 text-base">Last Cancellation Date: 22 Dec 2024</p>
 							</td>
 						</tr>
 						<tr class="bg-white border-b border-dark">
 							<td scope="col"
-								class="p-4 border-r border-l laptop:border-2 border-dark align-top text-daark whitespace-nowrap">
-								<p class="font-bold">Deluxe Room</p>
-								<div class="flex flex-col">
-									<ul class="font-normal">
-										<li>- 1 king bed</li>
-										<li>- 2 king beds</li>
-									</ul>
-									<p class="font-normal">Free crib available on request</p>
+								class="p-4 border-r border-l laptop:border-2 border-dark align-top text-dark whitespace-nowrap">
+								<h3 class="font-bold text-xl">Alaya Hotel Resort</h3>
+								<p class="font-semibold">Deluxe Room</p>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Check in - Check out:</p>
+									<p>11 Nov 2024 - 12 Nov 2024</p>
 								</div>
-								<div class="benefits flex flex-wrap gap-2">
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-house"></i>
-										38 m²
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-map"></i>
-										Balcony
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-leaf"></i>
-										Garden view
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-snowflake"></i>
-										Air conditioning
-									</p>
-									<p class="flex gap-1 items-center">
-										<i class="fa-solid fa-wifi"></i>
-										Free wi-fi
-									</p>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Booked:</p>
+									<p>10 Nov 2024</p>
 								</div>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<i class="fa-solid fa-user text-dark"></i>
-								<i class="fa-solid fa-user text-dark"></i>
+								<h3 class="font-bold text-xl">Muhammad Ali</h3>
+								<ul class="flex flex-col mt-2 text-sm list-inside list-disc">
+									<li>Room 1 (2 Adults)</li>
+									<li>Room 2 (2 Adults)</li>
+									<li>Room 3 (2 Adults)</li>
+									<li>Room 4 (2 Adults)</li>
+									<li>Room 5 (2 Adults)</li>
+								</ul>
+								<p class="font-semibold text-sm text-green-500 mt-2">10 Guests</p>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
 								<div class="flex flex-col gap-2">
-									<p class="font-semibold">$2999</p>
+									<p class="font-semibold">IDR 15,000,000</p>
 									<p class="text-sm font-semibold text-gray-600">includes tax and charges</p>
 								</div>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<div class="flex flex-col gap-1">
-									<p class="font-semibold">Breakfast included</p>
-									<p class="font-semibold">Non-refundable</p>
-									<p class="font-semibold">Pay later</p>
+								<div class="flex flex-col gap-1 items-center">
+									<p class="font-semibold text-green-500">Paid</p>
+							</td>
+							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+								<div class="flex gap-2">
+									<a href="accommodation-detail.html" class="w-full p-3 text-white rounded-lg bg-dark hover:bg-slate-500 duration-100 text-center">
+										See Details
+									</a>
+									<button class="w-full p-3 text-white rounded-lg bg-danger hover:bg-red-400 duration-100 text-center" type="button">
+										Cancel Booking
+									</button>
+								</div>
+								<p class="text-danger mt-2 text-base">Last Cancellation Date: 22 Dec 2024</p>
+							</td>
+						</tr>
+						<tr class="bg-white border-b border-dark">
+							<td scope="col"
+								class="p-4 border-r border-l laptop:border-2 border-dark align-top text-dark whitespace-nowrap">
+								<h3 class="font-bold text-xl">Alaya Hotel Resort</h3>
+								<p class="font-semibold">Deluxe Room</p>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Check in - Check out:</p>
+									<p>11 Nov 2024 - 12 Nov 2024</p>
+								</div>
+								<div class="flex flex-col mt-2 text-sm">
+									<p class="font-semibold">Booked:</p>
+									<p>10 Nov 2024</p>
 								</div>
 							</td>
 							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
-								<select class="w-full rounded-md p-2" name="amount" id="amount">
-									<option selected value="">0</option>
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-								</select>
+								<h3 class="font-bold text-xl">Muhammad Ali</h3>
+								<ul class="flex flex-col mt-2 text-sm list-inside list-disc">
+									<li>Room 1 (2 Adults)</li>
+									<li>Room 2 (2 Adults)</li>
+									<li>Room 3 (2 Adults)</li>
+									<li>Room 4 (2 Adults)</li>
+									<li>Room 5 (2 Adults)</li>
+								</ul>
+								<p class="font-semibold text-sm text-green-500 mt-2">10 Guests</p>
+							</td>
+							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+								<div class="flex flex-col gap-2">
+									<p class="font-semibold">IDR 15,000,000</p>
+									<p class="text-sm font-semibold text-gray-600">includes tax and charges</p>
+								</div>
+							</td>
+							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+								<div class="flex flex-col gap-1 items-center">
+									<p class="font-semibold text-green-500">Paid</p>
+							</td>
+							<td class="p-4 border-r border-l laptop:border-2 border-dark align-top">
+								<div class="flex gap-2">
+									<a href="accommodation-detail.html" class="w-full p-3 text-white rounded-lg bg-dark hover:bg-slate-500 duration-100 text-center">
+										See Details
+									</a>
+									<button class="w-full p-3 text-white rounded-lg bg-danger hover:bg-red-400 duration-100 text-center" type="button">
+										Cancel Booking
+									</button>
+								</div>
+								<p class="text-danger mt-2 text-base">Last Cancellation Date: 22 Dec 2024</p>
 							</td>
 						</tr>
 					</tbody>
