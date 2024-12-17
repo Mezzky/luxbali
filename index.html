@@ -240,8 +240,41 @@
 
                 <!-- Sign-In Button -->
                 <a href="./login/login.html" class="btn-primary">Sign in</a>
-                <a href="cart-page.html"><i
-                        class="fa-solid fa-cart-shopping text-2xl text-main hover:text-accent duration-100"></i></a>
+                <!-- Profile Dropdown -->
+                <div class="relative">
+                    <button id="dropDownProfileLink" data-dropdown-toggle="dropDownProfile"
+                        class="inline-flex items-center font-bold justify-center px-4 py-2 text-sm text-dark rounded-lg cursor-pointer bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/></svg>
+                        Username <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" /></svg>
+                    </button>
+                    <!-- Profile menu -->
+                    <div id="dropDownProfile"
+                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-dark" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="booking-history.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-3.15 0-5.575-1.912T3.275 14.2q-.1-.375.15-.687t.675-.363q.4-.05.725.15t.45.6q.6 2.25 2.475 3.675T12 19q2.925 0 4.963-2.037T19 12t-2.037-4.962T12 5q-1.725 0-3.225.8T6.25 8H8q.425 0 .713.288T9 9t-.288.713T8 10H4q-.425 0-.712-.288T3 9V5q0-.425.288-.712T4 4t.713.288T5 5v1.35q1.275-1.6 3.113-2.475T12 3q1.875 0 3.513.713t2.85 1.924t1.925 2.85T21 12t-.712 3.513t-1.925 2.85t-2.85 1.925T12 21m1-9.4l2.5 2.5q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.8-2.8q-.15-.15-.225-.337T11 11.975V8q0-.425.288-.712T12 7t.713.288T13 8z"/></svg>
+                                    Booking History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cart-page.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H1V2h3.25z"/></svg>
+                                    Your Cart
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-2 px-4 py-2 text-danger hover:bg-gray-100">
+                                    <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h6q.425 0 .713.288T12 20t-.288.713T11 21zm12.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7t.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712t.287-.688z"/></svg>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -263,7 +296,42 @@
             <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
             <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
             <a href="./login/login.html" class="mobile-btn-primary">Sign in</a>
-            <div class="nav-country flex laptop:hidden items-center justify-between gap-4">
+            <!-- Profile Dropdown -->
+            <div class="relative w-full">
+                <button id="dropDownProfileLink" data-dropdown-toggle="dropDownProfileMobile"
+                    class="inline-flex w-full items-center font-bold justify-center px-4 py-2 text-sm text-dark rounded-lg cursor-pointer bg-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/></svg>
+                    Username <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" /></svg>
+                </button>
+                <!-- Profile menu -->
+                <div id="dropDownProfileMobile"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                    <ul class="py-2 text-sm text-dark" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a href="booking-history.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-3.15 0-5.575-1.912T3.275 14.2q-.1-.375.15-.687t.675-.363q.4-.05.725.15t.45.6q.6 2.25 2.475 3.675T12 19q2.925 0 4.963-2.037T19 12t-2.037-4.962T12 5q-1.725 0-3.225.8T6.25 8H8q.425 0 .713.288T9 9t-.288.713T8 10H4q-.425 0-.712-.288T3 9V5q0-.425.288-.712T4 4t.713.288T5 5v1.35q1.275-1.6 3.113-2.475T12 3q1.875 0 3.513.713t2.85 1.924t1.925 2.85T21 12t-.712 3.513t-1.925 2.85t-2.85 1.925T12 21m1-9.4l2.5 2.5q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.8-2.8q-.15-.15-.225-.337T11 11.975V8q0-.425.288-.712T12 7t.713.288T13 8z"/></svg>
+                                Booking History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart-page.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H1V2h3.25z"/></svg>
+                                Your Cart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 text-danger hover:bg-gray-100">
+                                <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h6q.425 0 .713.288T12 20t-.288.713T11 21zm12.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7t.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712t.287-.688z"/></svg>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-btn flex laptop:hidden items-center justify-between gap-4">
                 <!-- Currency Dropdown -->
                 <div class="relative">
                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarMobile"
@@ -411,9 +479,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <a href="cart-page.html"><i
-                        class="fa-solid fa-cart-shopping text-2xl text-main hover:text-accent duration-100"></i></a>
             </div>
         </ul>
     </header>

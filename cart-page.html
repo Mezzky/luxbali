@@ -21,6 +21,7 @@
                     md: "375px",
                     lg: "425px",
                     tablet: "768px",
+                    laptopS: "1024px",
                     laptop: "1440px",
                     desktop: "1920px",
                 },
@@ -240,8 +241,55 @@
 
                 <!-- Sign-In Button -->
                 <a href="./login/login.html" class="btn-primary">Sign in</a>
-                <a href="cart-page.html"><i
-                        class="fa-solid fa-cart-shopping text-2xl text-main hover:text-accent duration-100"></i></a>
+                <!-- Profile Dropdown -->
+                <div class="relative">
+                    <button id="dropDownProfileLink" data-dropdown-toggle="dropDownProfile"
+                        class="inline-flex items-center font-bold justify-center px-4 py-2 text-sm text-dark rounded-lg cursor-pointer bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
+                        </svg>
+                        Username <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" /></svg>
+                    </button>
+                    <!-- Profile menu -->
+                    <div id="dropDownProfile"
+                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-dark" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="booking-history.html"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 21q-3.15 0-5.575-1.912T3.275 14.2q-.1-.375.15-.687t.675-.363q.4-.05.725.15t.45.6q.6 2.25 2.475 3.675T12 19q2.925 0 4.963-2.037T19 12t-2.037-4.962T12 5q-1.725 0-3.225.8T6.25 8H8q.425 0 .713.288T9 9t-.288.713T8 10H4q-.425 0-.712-.288T3 9V5q0-.425.288-.712T4 4t.713.288T5 5v1.35q1.275-1.6 3.113-2.475T12 3q1.875 0 3.513.713t2.85 1.924t1.925 2.85T21 12t-.712 3.513t-1.925 2.85t-2.85 1.925T12 21m1-9.4l2.5 2.5q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.8-2.8q-.15-.15-.225-.337T11 11.975V8q0-.425.288-.712T12 7t.713.288T13 8z" />
+                                    </svg>
+                                    Booking History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cart-page.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H1V2h3.25z" />
+                                    </svg>
+                                    Your Cart
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-2 px-4 py-2 text-danger hover:bg-gray-100">
+                                    <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h6q.425 0 .713.288T12 20t-.288.713T11 21zm12.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7t.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712t.287-.688z" />
+                                    </svg>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -263,7 +311,55 @@
             <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
             <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
             <a href="./login/login.html" class="mobile-btn-primary">Sign in</a>
-            <div class="nav-country flex laptop:hidden items-center justify-between gap-4">
+            <!-- Profile Dropdown -->
+            <div class="relative w-full">
+                <button id="dropDownProfileLink" data-dropdown-toggle="dropDownProfileMobile"
+                    class="inline-flex w-full items-center font-bold justify-center px-4 py-2 text-sm text-dark rounded-lg cursor-pointer bg-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
+                    </svg>
+                    Username <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" /></svg>
+                </button>
+                <!-- Profile menu -->
+                <div id="dropDownProfileMobile"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                    <ul class="py-2 text-sm text-dark" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a href="booking-history.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M12 21q-3.15 0-5.575-1.912T3.275 14.2q-.1-.375.15-.687t.675-.363q.4-.05.725.15t.45.6q.6 2.25 2.475 3.675T12 19q2.925 0 4.963-2.037T19 12t-2.037-4.962T12 5q-1.725 0-3.225.8T6.25 8H8q.425 0 .713.288T9 9t-.288.713T8 10H4q-.425 0-.712-.288T3 9V5q0-.425.288-.712T4 4t.713.288T5 5v1.35q1.275-1.6 3.113-2.475T12 3q1.875 0 3.513.713t2.85 1.924t1.925 2.85T21 12t-.712 3.513t-1.925 2.85t-2.85 1.925T12 21m1-9.4l2.5 2.5q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.8-2.8q-.15-.15-.225-.337T11 11.975V8q0-.425.288-.712T12 7t.713.288T13 8z" />
+                                </svg>
+                                Booking History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart-page.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H1V2h3.25z" />
+                                </svg>
+                                Your Cart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 text-danger hover:bg-gray-100">
+                                <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h6q.425 0 .713.288T12 20t-.288.713T11 21zm12.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7t.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712t.287-.688z" />
+                                </svg>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-btn flex laptop:hidden items-center justify-between gap-4">
                 <!-- Currency Dropdown -->
                 <div class="relative">
                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarMobile"
@@ -411,9 +507,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <a href="cart-page.html"><i
-                        class="fa-solid fa-cart-shopping text-2xl text-main hover:text-accent duration-100"></i></a>
             </div>
         </ul>
     </header>
@@ -422,15 +515,17 @@
     <section class="cart pt-24 px-5 pb-10 flex flex-col gap-5 tablet:px-12 laptop:px-20">
         <!-- Cart Header -->
         <div class="cart-header flex gap-5 justify-between items-center p-4 rounded-lg bg-white tablet:px-20">
-            <a href="cart-page.html" class="active-text font-semibold text-center text-sm tablet:w-max text-main">1. Your Selection</a>
+            <a href="cart-page.html" class="active-text font-semibold text-center text-sm tablet:w-max text-main">1.
+                Your Selection</a>
             <div class="line bg-main rounded-full h-8 w-1 tablet:h-1 tablet:w-full"></div>
-            <a href="payment-detail.html" class="active-text font-semibold text-center text-sm tablet:w-max">2. Your Details</a>
+            <a href="payment-detail.html" class="active-text font-semibold text-center text-sm tablet:w-max">2. Your
+                Details</a>
             <div class="line bg-main rounded-full h-8 w-1 tablet:h-1 tablet:w-full"></div>
             <a href="doku" class="active-text font-semibold text-center text-sm tablet:w-max">3. Your Payment</a>
         </div>
 
-        <div class="container w-full grid grid-flow-row-dense grid-cols-1 tablet:grid-cols-3 gap-5">
-            <div class="wrapper flex flex-col gap-5 tablet:col-span-1 w-full tablet:order-2">
+        <div class="container w-full grid grid-flow-row-dense grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-5">
+            <div class="wrapper flex flex-col gap-5 laptop:col-span-1 w-full tablet:order-2">
                 <!-- Booking Details -->
                 <div class="booking-details rounded-lg flex flex-col overflow-hidden">
                     <h2 class="bg-main text-white p-4 text-center font-bold">Booking Details</h2>
@@ -441,14 +536,15 @@
                         <p class="text-dark">2 days</p>
                     </div>
                 </div>
-                
+
                 <!-- Price Summary -->
                 <div class="price-summary rounded-lg flex flex-col overflow-hidden">
                     <h2 class="bg-main text-white p-4 text-center font-bold">Price Summary</h2>
                     <div class="box p-4 flex flex-col gap-2 bg-white">
                         <div class="list flex flex-col w-full justify-between gap-4 tablet:flex-row">
                             <div class="left flex flex-col">
-                                <h3 class="text-dark font-bold laptop:w-60">1. COURTYARD BY MARRIOT BALI NUSA DUA RESORT</h3>
+                                <h3 class="text-dark font-bold laptop:w-60">1. COURTYARD BY MARRIOT BALI NUSA DUA RESORT
+                                </h3>
                                 <p class="text-dark">2x Deluxe Room</p>
                             </div>
                             <div class="right flex flex-col">
@@ -459,7 +555,8 @@
                         </div>
                         <div class="list flex flex-col w-full justify-between gap-4 tablet:flex-row">
                             <div class="left flex flex-col">
-                                <h3 class="text-dark font-bold laptop:w-60">2. COURTYARD BY MARRIOT BALI NUSA DUA RESORT</h3>
+                                <h3 class="text-dark font-bold laptop:w-60">2. COURTYARD BY MARRIOT BALI NUSA DUA RESORT
+                                </h3>
                                 <p class="text-dark">2x Deluxe Room</p>
                             </div>
                             <div class="right flex flex-col">
@@ -470,7 +567,8 @@
                         </div>
                         <div class="list flex flex-col w-full justify-between gap-4 tablet:flex-row">
                             <div class="left flex flex-col">
-                                <h3 class="text-dark font-bold laptop:w-60">3. COURTYARD BY MARRIOT BALI NUSA DUA RESORT</h3>
+                                <h3 class="text-dark font-bold laptop:w-60">3. COURTYARD BY MARRIOT BALI NUSA DUA RESORT
+                                </h3>
                                 <p class="text-dark">2x Deluxe Room</p>
                             </div>
                             <div class="right flex flex-col">
@@ -482,33 +580,30 @@
                     </div>
                     <div class="price-container flex flex-col bg-main gap-5 p-5">
                         <div class="promo-box flex flex-col gap-2 w-full">
-                            <label 
-                                class="text-white font-semibold" 
-                                for="promoCode">
+                            <label class="text-white font-semibold" for="promoCode">
                                 Promo Code
                             </label>
-                            <input 
-                                class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
-                                type="text" 
-                                name="promoCode" 
-                                id="promoCode"
-                            >
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="text" name="promoCode" id="promoCode">
                         </div>
-                        <div class="total-price flex flex-col justify-between tablet:flex-row tablet:items-start bg-main gap-2">
+                        <div
+                            class="total-price flex flex-col justify-between tablet:flex-row tablet:items-start bg-main gap-2">
                             <h2 class="text-white font-bold text-lg">Total Price:</h2>
                             <div class="price flex flex-col">
                                 <p class="text-white font-semibold text-lg">Rp. 3,500,000</p>
                                 <span class="text-white text-sm">includes taxes and charges</span>
-                                <span class="text-white bg-green-500 text-sm py-1 px-2 mt-2 rounded-md">10% Travel Agent Cashback</span>
+                                <span class="text-white bg-green-500 text-sm py-1 px-2 mt-2 rounded-md">10% Travel Agent
+                                    Cashback</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Product Lists -->
-            <div class="product-lists w-full tablet:col-span-2 grid grid-cols-1 gap-4 tablet:order-1">
-                <div class="card-product rounded-xl bg-white p-6 flex flex-col items-center h-max laptop:flex-row gap-5 w-full">
+            <div class="product-lists w-full laptop:col-span-2 grid grid-cols-1 gap-4 tablet:order-1">
+                <div
+                    class="card-product rounded-xl bg-white p-6 flex flex-col items-center h-max laptop:flex-row gap-5 w-full">
                     <div class="img-box justify-center rounded-lg overflow-hidden">
                         <img class="w-full" src="img/img-2.jfif" alt="">
                     </div>
@@ -520,7 +615,8 @@
                         </p>
                         <p class="text-dark font-bold text-lg">Benefit</p>
                         <p class="text-dark text-sm">Daily buffet breakfast for 2 persons</p>
-                        <p class="text-dark text-sm">11 Nov 2024 - 12 Nov 2024,  Adult(s) : 1 , Child(s) : 0 , Infant(s) : 0</p>
+                        <p class="text-dark text-sm">11 Nov 2024 - 12 Nov 2024, Adult(s) : 1 , Child(s) : 0 , Infant(s)
+                            : 0</p>
                         <div class="price flex flex-col">
                             <div class="flex items-center gap-6">
                                 <input class="p-2" type="checkbox" name="selectItem" id="selectItem">
@@ -529,11 +625,13 @@
                                     <span class="text-dark text-sm">includes taxes and charges</span>
                                 </div>
                             </div>
-                            <button onclick="confirm('Are you sure want to Delete?')" class="bg-danger text-white p-2 rounded-lg mt-4 hover:bg-dark duration-200">Delete</button>
+                            <button onclick="confirm('Are you sure want to Delete?')"
+                                class="bg-danger text-white p-2 rounded-lg mt-4 hover:bg-dark duration-200">Delete</button>
                         </div>
                     </div>
                 </div>
-                <div class="card-product rounded-xl bg-white p-6 flex flex-col items-center h-max laptop:flex-row gap-5 w-full">
+                <div
+                    class="card-product rounded-xl bg-white p-6 flex flex-col items-center h-max laptop:flex-row gap-5 w-full">
                     <div class="img-box justify-center rounded-lg overflow-hidden">
                         <img class="w-full" src="img/img-2.jfif" alt="">
                     </div>
@@ -545,7 +643,8 @@
                         </p>
                         <p class="text-dark font-bold text-lg">Benefit</p>
                         <p class="text-dark text-sm">Daily buffet breakfast for 2 persons</p>
-                        <p class="text-dark text-sm">11 Nov 2024 - 12 Nov 2024,  Adult(s) : 1 , Child(s) : 0 , Infant(s) : 0</p>
+                        <p class="text-dark text-sm">11 Nov 2024 - 12 Nov 2024, Adult(s) : 1 , Child(s) : 0 , Infant(s)
+                            : 0</p>
                         <div class="price flex flex-col">
                             <div class="flex items-center gap-6">
                                 <input class="p-2" type="checkbox" name="selectItem" id="selectItem">
@@ -554,11 +653,13 @@
                                     <span class="text-dark text-sm">includes taxes and charges</span>
                                 </div>
                             </div>
-                            <button onclick="confirm('Are you sure want to Delete?')" class="bg-danger text-white p-2 rounded-lg mt-4 hover:bg-dark duration-200">Delete</button>
+                            <button onclick="confirm('Are you sure want to Delete?')"
+                                class="bg-danger text-white p-2 rounded-lg mt-4 hover:bg-dark duration-200">Delete</button>
                         </div>
                     </div>
                 </div>
-                <div class="card-product rounded-xl bg-white p-6 flex flex-col items-center h-max laptop:flex-row gap-5 w-full">
+                <div
+                    class="card-product rounded-xl bg-white p-6 flex flex-col items-center h-max laptop:flex-row gap-5 w-full">
                     <div class="img-box justify-center rounded-lg overflow-hidden">
                         <img class="w-full" src="img/img-2.jfif" alt="">
                     </div>
@@ -570,7 +671,8 @@
                         </p>
                         <p class="text-dark font-bold text-lg">Benefit</p>
                         <p class="text-dark text-sm">Daily buffet breakfast for 2 persons</p>
-                        <p class="text-dark text-sm">11 Nov 2024 - 12 Nov 2024,  Adult(s) : 1 , Child(s) : 0 , Infant(s) : 0</p>
+                        <p class="text-dark text-sm">11 Nov 2024 - 12 Nov 2024, Adult(s) : 1 , Child(s) : 0 , Infant(s)
+                            : 0</p>
                         <div class="price flex flex-col">
                             <div class="flex items-center gap-6">
                                 <input class="p-2" type="checkbox" name="selectItem" id="selectItem">
@@ -579,82 +681,84 @@
                                     <span class="text-dark text-sm">includes taxes and charges</span>
                                 </div>
                             </div>
-                            <button onclick="confirm('Are you sure want to Delete?')" class="bg-danger text-white p-2 rounded-lg mt-4 hover:bg-dark duration-200">Delete</button>
+                            <button onclick="confirm('Are you sure want to Delete?')"
+                                class="bg-danger text-white p-2 rounded-lg mt-4 hover:bg-dark duration-200">Delete</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="w-full flex gap-4 items-center justify-end">
-                    <a class="text-main text-center hover:underline font-semibold" href="index.html">Need other services?</a>
-                    <a class="bg-main text-center text-white py-3 px-6 rounded-lg duration-100 hover:bg-accent tablet:px-20" href="payment-detail.html">Next Step (Checkout)</a>
+                    <a class="text-main text-center hover:underline font-semibold" href="index.html">Need other
+                        services?</a>
+                    <a class="bg-main text-center text-white py-3 px-6 rounded-lg duration-100 hover:bg-accent tablet:px-20"
+                        href="payment-detail.html">Next Step (Checkout)</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-	<footer>
-		<div
-			class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-10 items-start tablet:grid-cols-2 tablet:p-10 laptop:py-10 laptop:px-32">
-			<!-- Logo -->
-			<a href="index.html" class="flex items-center place-self-center laptop:place-self-start laptop:self-center">
-				<img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-52 tablet:w-60" />
-			</a>
-			<div class="content flex gap-5 justify-center tablet:flex-row laptop:gap-24">
-				<div class="navigation flex flex-col gap-2">
-					<h3 class="uppercase font-bold text-sm text-white tablet:text-lg">navigation</h3>
-					<ul class="flex flex-col laptop:gap-2">
-						<li><a href="accommodation.html"
-								class="text-white hover:underline duration-100">Accommodation</a></li>
-						<li><a href="destination.html" class="text-white hover:underline duration-100">Destination</a>
-						</li>
-						<li><a href="bali-atraction.html" class="text-white hover:underline duration-100">Bali
-								Attraction</a></li>
-						<li><a href="transport.html" class="text-white hover:underline duration-100">Transport</a>
-						</li>
-						<li><a href="promotion.html" class="text-white hover:underline duration-100">Promotion</a>
-						</li>
-					</ul>
-				</div>
-				<div class="wrapper flex flex-col tablet:flex-row">
-					<div class="contact flex flex-col gap-2">
-						<h3 class="uppercase font-bold text-sm text-white tablet:text-lg">contact</h3>
-						<ul class="flex flex-col laptop:gap-2">
-							<li><a href="contact.html" class="text-white hover:underline duration-100">Contact
-									LuxBali</a></li>
-							<li><a href="about.html" class="text-white hover:underline duration-100">About
-									LuxBali</a>
-							</li>
-						</ul>
-					</div>
-					<div class="socmed flex items-start gap-4 mt-6 flex-col tablet:items-start tablet:ml-6 tablet:mt-0">
-						<h3 class="font-semibold text-sm text-white tablet:text-lg">Follow Us</h3>
-						<ul class="flex gap-2">
-							<li class="flex items-center justify-center">
-								<a href=""
-									class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
-										class="text-xl fa-brands fa-whatsapp"></i></a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href=""
-									class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
-										class="text-xl fa-brands fa-instagram"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="copyright flex items-center justify-center p-4 bg-main laptop:p-3">
-			<p class="text-white text-center">&copy; <span id="currentYear"></span> Lux Bali. All rights reserved.</p>
-		</div>
-	</footer>
+    <footer>
+        <div
+            class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-10 items-start tablet:grid-cols-2 tablet:p-10 laptop:py-10 laptop:px-32">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center place-self-center laptop:place-self-start laptop:self-center">
+                <img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-52 tablet:w-60" />
+            </a>
+            <div class="content flex gap-5 justify-center tablet:flex-row laptop:gap-24">
+                <div class="navigation flex flex-col gap-2">
+                    <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">navigation</h3>
+                    <ul class="flex flex-col laptop:gap-2">
+                        <li><a href="accommodation.html"
+                                class="text-white hover:underline duration-100">Accommodation</a></li>
+                        <li><a href="destination.html" class="text-white hover:underline duration-100">Destination</a>
+                        </li>
+                        <li><a href="bali-atraction.html" class="text-white hover:underline duration-100">Bali
+                                Attraction</a></li>
+                        <li><a href="transport.html" class="text-white hover:underline duration-100">Transport</a>
+                        </li>
+                        <li><a href="promotion.html" class="text-white hover:underline duration-100">Promotion</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrapper flex flex-col tablet:flex-row">
+                    <div class="contact flex flex-col gap-2">
+                        <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">contact</h3>
+                        <ul class="flex flex-col laptop:gap-2">
+                            <li><a href="contact.html" class="text-white hover:underline duration-100">Contact
+                                    LuxBali</a></li>
+                            <li><a href="about.html" class="text-white hover:underline duration-100">About
+                                    LuxBali</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socmed flex items-start gap-4 mt-6 flex-col tablet:items-start tablet:ml-6 tablet:mt-0">
+                        <h3 class="font-semibold text-sm text-white tablet:text-lg">Follow Us</h3>
+                        <ul class="flex gap-2">
+                            <li class="flex items-center justify-center">
+                                <a href=""
+                                    class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
+                                        class="text-xl fa-brands fa-whatsapp"></i></a>
+                            </li>
+                            <li class="flex items-center justify-center">
+                                <a href=""
+                                    class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
+                                        class="text-xl fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright flex items-center justify-center p-4 bg-main laptop:p-3">
+            <p class="text-white text-center">&copy; <span id="currentYear"></span> Lux Bali. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Chat WhatsApp -->
-	<a class="fixed bottom-10 right-10 z-50 text-3xl text-white py-3 px-4 rounded-full bg-green-500 duration-200 hover:bg-green-300"
-        href="https://wa.me/6281234567890?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." 	
-        target="_blank"><i
-        class="fa-solid fa-comment"></i>
+    <a class="fixed bottom-10 right-10 z-50 text-3xl text-white py-3 px-4 rounded-full bg-green-500 duration-200 hover:bg-green-300"
+        href="https://wa.me/6281234567890?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+        target="_blank"><i class="fa-solid fa-comment"></i>
     </a>
 
     <!-- Flowbite JS -->
