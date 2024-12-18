@@ -603,7 +603,7 @@
             <!-- Form Details -->
             <form action="" autocomplete="off"
                 class="form-lists w-full tablet:col-span-2 grid grid-cols-1 gap-4 tablet:h-max tablet:order-1">
-                <!-- Enter Details -->
+                <!-- Guests Details -->
                 <div class="card-form rounded-xl bg-white p-6 flex flex-col h-max gap-2 shadow-lg w-full">
                     <h2 class="text-dark font-bold text-xl">Enter your details</h2>
                     <p class="text-white font-semibold w-full bg-slate-400 rounded-md p-2">
@@ -616,8 +616,14 @@
                                 First Name
                                 <span class="text-danger">*</span>
                             </label>
-                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
-                                type="text" name="firstName" id="firstName" required>
+                            <div class="input flex gap-2">
+                                <select class="border border-dark rounded-md p-2 focus:ring-main focus:border-main" name="title" id="title">
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                </select>
+                                <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                    type="text" name="firstName" id="firstName" required>
+                            </div>
                         </div>
                         <div class="input-box flex flex-col gap-2 w-full">
                             <label class="text-dark font-semibold" for="lastName">
@@ -626,6 +632,42 @@
                             </label>
                             <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
                                 type="text" name="lastName" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="input-container w-full flex gap-2 flex-col tablet:flex-row">
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="userBirthDate">
+                                Birth Date
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="date" name="userBirthDate" id="userBirthDate" required>
+                        </div>
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="userAddress">
+                                Address
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="text" name="userAddress" id="userAddress" required>
+                        </div>
+                    </div>
+                    <div class="input-container w-full flex gap-2 flex-col tablet:flex-row">
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="userCity">
+                                City
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="text" name="userCity" id="userCity" required>
+                        </div>
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="userCountry">
+                                Country
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="text" name="userCountry" id="userCountry" required>
                         </div>
                     </div>
                     <div class="input-container w-full flex gap-2 flex-col tablet:flex-row">
@@ -645,6 +687,24 @@
                             </label>
                             <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
                                 type="text" name="phoneNumber" id="phoneNumber" required>
+                        </div>
+                    </div>
+                    <div class="input-container w-full flex gap-2 flex-col tablet:flex-row">
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="userState">
+                                State
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="text" name="userState" id="userState" required>
+                        </div>
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="zipCode">
+                                ZIP Code
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="text" name="zipCode" id="zipCode" required>
                         </div>
                     </div>
                     <div class="input-container w-full flex gap-2 flex-col">
@@ -682,8 +742,49 @@
                     </div>
                 </div>
 
-                <!-- Arrival Time -->
+                <!-- Payment Details -->
                 <div class="card-form rounded-xl bg-white p-6 flex flex-col h-max gap-2 shadow-lg w-full">
+                    <h2 class="text-dark font-bold text-xl">Payment your details</h2>
+                    <div class="input-container w-full flex gap-2 flex-col tablet:flex-row">
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="cardType">
+                                Card Type
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="text" name="cardType" id="cardType" required>
+                        </div>
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="cardNumber">
+                                Card Number
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="number" name="cardNumber" id="cardNumber" required>
+                        </div>
+                    </div>
+                    <div class="input-container w-full flex gap-2 flex-col tablet:flex-row">
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="expiryMonth">
+                                Expiry Month
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="date" name="expiryMonth" id="expiryMonth" required>
+                        </div>
+                        <div class="input-box flex flex-col gap-2 w-full">
+                            <label class="text-dark font-semibold" for="expiryYear">
+                                Expiry Year
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main"
+                                type="date" name="expiryYear" id="expiryYear" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arrival Time -->
+                <!-- <div class="card-form rounded-xl bg-white p-6 flex flex-col h-max gap-2 shadow-lg w-full">
                     <h2 class="text-dark font-bold text-xl">Your Arrival Time</h2>
                     <p class="text-main font-semibold">
                         <i class="fa-solid fa-square-check"></i>
@@ -712,7 +813,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Button Submit and Select Other Services -->
                 <div class="w-full flex gap-4 items-center justify-end">
