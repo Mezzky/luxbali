@@ -36,12 +36,20 @@
 .nav-link {
   font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  color: #1F1F1F;
+  color: #FFFFFF;
   transition: color 0.2s;
 }
 
 .nav-link:hover {
-  color: #0084FF;
+  color: #FF6347;
+}
+
+header.bg-secondary .nav-link {
+  color: #1F1F1F;
+}
+
+header.bg-secondary .nav-link:hover {
+  color: #FF6347;
 }
 
 .mobile-nav-link {
