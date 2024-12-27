@@ -38,6 +38,7 @@
   font-weight: 600;
   color: #FFFFFF;
   transition: color 0.2s;
+  font-size: 1.2rem; /* Tailwind text-base */
 }
 
 .nav-link:hover {
@@ -49,6 +50,14 @@ header.bg-secondary .nav-link {
 }
 
 header.bg-secondary .nav-link:hover {
+  color: #FF6347;
+}
+
+header.header-detail .nav-link {
+  color: #1F1F1F;
+}
+
+header.header-detail .nav-link:hover {
   color: #FF6347;
 }
 

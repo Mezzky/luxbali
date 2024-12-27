@@ -460,3 +460,133 @@
             </div>
         </ul>
     </header>
+
+
+    <!-- Destination Real -->
+    <div class="grid grid-cols-1 tablet:grid-cols-2">
+            <a class="destination-card group relative overflow-hidden cursor-pointer" href="destination.html">
+                <img class="w-full transition-all duration-300 group-hover:scale-150" src="img/bali-img.png" alt="">
+                <div
+                    class="overlay absolute bottom-0 bg-gradient-to-t from-black to-transparent h-24 w-full laptop:h-60">
+                </div>
+                <div
+                    class="content absolute flex flex-col laptop:gap-2 bottom-4 w-full px-4 md:px-6 md:bottom-6 laptop:px-12 laptop:bottom-8">
+                    <h3 class="text-white text-2xl font-semibold tablet:text-3xl laptop:text-5xl">Bali</h3>
+                    <p class="text-white text-xl tablet:text-2xl laptop:text-3xl">Indonesia</p>
+                    <div
+                        class="border-2 absolute right-4 bottom-2 md:right-6 laptop:right-8 border-white rounded-full px-3 py-1 transition-all duration-300 group-hover:bg-white laptop:px-6 laptop:py-4">
+                        <i
+                            class="fa-solid fa-angle-right text-white transition-all duration-300 group-hover:text-dark laptop:text-3xl"></i>
+                    </div>
+                </div>
+            </a>
+            <a class="destination-card group relative overflow-hidden cursor-pointer" href="destination.html">
+                <img class="w-full transition-all duration-300 group-hover:scale-150" src="img/maldives-img.png" alt="">
+                <div
+                    class="overlay absolute bottom-0 bg-gradient-to-t from-black to-transparent h-24 w-full laptop:h-60">
+                </div>
+                <div
+                    class="content absolute flex flex-col laptop:gap-2 bottom-4 w-full px-4 md:px-6 md:bottom-6 laptop:px-12 laptop:bottom-8">
+                    <h3 class="text-white text-2xl font-semibold tablet:text-3xl laptop:text-5xl">Maldives</h3>
+                    <p class="text-white text-xl tablet:text-2xl laptop:text-3xl">Southwest of India</p>
+                    <div
+                        class="border-2 absolute right-4 bottom-2 md:right-6 laptop:right-8 border-white rounded-full px-3 py-1 transition-all duration-300 group-hover:bg-white laptop:px-6 laptop:py-4">
+                        <i
+                            class="fa-solid fa-angle-right text-white transition-all duration-300 group-hover:text-dark laptop:text-3xl"></i>
+                    </div>
+                </div>
+            </a>
+            <a class="destination-card group relative overflow-hidden cursor-pointer" href="destination.html">
+                <img class="w-full transition-all duration-300 group-hover:scale-150" src="img/singapore-img.png"
+                    alt="">
+                <div
+                    class="overlay absolute bottom-0 bg-gradient-to-t from-black to-transparent h-24 w-full laptop:h-60">
+                </div>
+                <div
+                    class="content absolute flex flex-col laptop:gap-2 bottom-4 w-full px-4 md:px-6 md:bottom-6 laptop:px-12 laptop:bottom-8">
+                    <h3 class="text-white text-2xl font-semibold tablet:text-3xl laptop:text-5xl">Singapore</h3>
+                    <p class="text-white text-xl tablet:text-2xl laptop:text-3xl">Southeast Asia</p>
+                    <div
+                        class="border-2 absolute right-4 bottom-2 md:right-6 laptop:right-8 border-white rounded-full px-3 py-1 transition-all duration-300 group-hover:bg-white laptop:px-6 laptop:py-4">
+                        <i
+                            class="fa-solid fa-angle-right text-white transition-all duration-300 group-hover:text-dark laptop:text-3xl"></i>
+                    </div>
+                </div>
+            </a>
+            <a class="destination-card group relative overflow-hidden cursor-pointer" href="destination.html">
+                <img class="w-full transition-all duration-300 group-hover:scale-150" src="img/vietnam-img.png" alt="">
+                <div
+                    class="overlay absolute bottom-0 bg-gradient-to-t from-black to-transparent h-24 w-full laptop:h-60">
+                </div>
+                <div
+                    class="content absolute flex flex-col laptop:gap-2 bottom-4 w-full px-4 md:px-6 md:bottom-6 laptop:px-12 laptop:bottom-8">
+                    <h3 class="text-white text-2xl font-semibold tablet:text-3xl laptop:text-5xl">Vietnam</h3>
+                    <p class="text-white text-xl tablet:text-2xl laptop:text-3xl">Southeast Asia</p>
+                    <div
+                        class="border-2 absolute right-4 bottom-2 md:right-6 laptop:right-8 border-white rounded-full px-3 py-1 transition-all duration-300 group-hover:bg-white laptop:px-6 laptop:py-4">
+                        <i
+                            class="fa-solid fa-angle-right text-white transition-all duration-300 group-hover:text-dark laptop:text-3xl"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Footer Real -->
+         <!-- Footer -->
+    <footer>
+        <div
+            class="footer-content grid grid-cols-1 px-6 py-10 bg-dark border-t-2 border-t-main gap-10 items-start tablet:grid-cols-2 tablet:p-10 laptop:py-10 laptop:px-32">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center place-self-center laptop:place-self-start laptop:self-center">
+                <img src="img/logo-luxbali.png" alt="LuxBali Logo" class="w-52 tablet:w-60" />
+            </a>
+            <div class="content flex gap-5 justify-center tablet:flex-row laptop:gap-24">
+                <div class="navigation flex flex-col gap-2">
+                    <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">navigation</h3>
+                    <ul class="flex flex-col laptop:gap-2">
+                        <li><a href="accommodation.html"
+                                class="text-white hover:underline duration-100">Accommodation</a></li>
+                        <li><a href="destination.html" class="text-white hover:underline duration-100">Destination</a>
+                        </li>
+                        <li><a href="bali-atraction.html" class="text-white hover:underline duration-100">Bali
+                                Attraction</a></li>
+                        <li><a href="transport.html" class="text-white hover:underline duration-100">Transport</a>
+                        </li>
+                        <li><a href="promotion.html" class="text-white hover:underline duration-100">Promotion</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrapper flex flex-col tablet:flex-row">
+                    <div class="contact flex flex-col gap-2">
+                        <h3 class="uppercase font-bold text-sm text-white tablet:text-lg">contact</h3>
+                        <ul class="flex flex-col laptop:gap-2">
+                            <li><a href="contact.html" class="text-white hover:underline duration-100">Contact
+                                    LuxBali</a></li>
+                            <li><a href="about.html" class="text-white hover:underline duration-100">About
+                                    LuxBali</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socmed flex items-start gap-4 mt-6 flex-col tablet:items-start tablet:ml-6 tablet:mt-0">
+                        <h3 class="font-semibold text-sm text-white tablet:text-lg">Follow Us</h3>
+                        <ul class="flex gap-2">
+                            <li class="flex items-center justify-center">
+                                <a href=""
+                                    class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
+                                        class="text-xl fa-brands fa-whatsapp"></i></a>
+                            </li>
+                            <li class="flex items-center justify-center">
+                                <a href=""
+                                    class="text-white px-2 py-1 rounded-lg bg-accent hover:bg-main duration-100"><i
+                                        class="text-xl fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright flex items-center justify-center p-4 bg-main laptop:p-3">
+            <p class="text-white text-center">&copy; <span id="currentYear"></span> Lux Bali. All rights reserved.</p>
+        </div>
+    </footer>
