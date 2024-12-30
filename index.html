@@ -418,11 +418,23 @@
         <!-- YouTube Video Embed -->
         <div class="absolute inset-0 -z-10">
             <div class="absolute inset-0 w-full h-full">
-                <iframe
+                <!-- <iframe
                     class="absolute top-1/2 left-1/2 w-[400%] tablet:w-[200%] h-[200%] transform -translate-x-1/2 -translate-y-1/2"
                     src="https://www.youtube.com/embed/BFS9n4B_2xA?autoplay=1&controls=0&mute=1&playsinline=1&showinfo=0&autohide=1&modestbranding=1&loop=1&playlist=BFS9n4B_2xA"
                     title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                </iframe>
+                </iframe> -->
+
+                <!-- Mobile Video -->
+                <video class="absolute object-cover top-1/2 left-1/2 transform tablet:hidden -translate-x-1/2 -translate-y-1/2 z-50"
+                    loop autoplay muted playsinline preload="auto">
+                    <source src="video/hero-video-mobile.mp4" type="video/mp4">
+                </video>
+                <!-- Desktop Video -->
+                <video 
+                class="absolute object-cover hidden tablet:block top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
+                loop autoplay muted playsinline preload="auto">
+                    <source src="video/hero-video.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
 
@@ -1067,34 +1079,22 @@
         <!-- Carousel -->
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative overflow-hidden h-52 tablet:h-[350px] laptop:h-[800px]">
+            <div class="relative overflow-hidden h-52 tablet:h-[350px] laptop:h-[600px]">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/promotion-img.png"
+                    <img src="img/hg-promo.png"
                         class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-center"
                         alt="...">
                 </div>
-                <!-- Item 1 -->
+                <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/promotion-img.png"
+                    <img src="img/indigo-promo.png"
                         class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-center"
                         alt="...">
                 </div>
-                <!-- Item 1 -->
+                <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/promotion-img.png"
-                        class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-center"
-                        alt="...">
-                </div>
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/promotion-img.png"
-                        class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-center"
-                        alt="...">
-                </div>
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/promotion-img.png"
+                    <img src="img/kayon-promo.png"
                         class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-center"
                         alt="...">
                 </div>
