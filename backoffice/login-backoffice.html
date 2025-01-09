@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/custom.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c3d5183f0f.js" crossorigin="anonymous"></script>
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <!-- Tailwind Variable -->
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "320px",
+                    md: "375px",
+                    lg: "425px",
+                    tablet: "768px",
+                    laptop: "1440px",
+                    desktop: "1920px",
+                },
+                extend: {
+                    fontFamily: {
+                        outfit: ['Outfit', 'sans-serif'], // Add Google Font here
+                    },
+                    colors: {
+                        main: '#0084FF',
+                        light: '#F5FAFF',
+                        dark: '#1F1F1F',
+                        accent: '#FF6347',
+                        secondary: '#D6EBFF',
+                        success: '#61A85F',
+                        danger: '#FF5B5B',
+                    },
+                    backgroundImage: {
+                        "hero": "url('/src/img/hero-img.png')",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-outfit bg-[#f4f5f7] scroll-smooth">
+    
+	<!-- User Login -->
+	<main class="w-full bg-light h-screen flex flex-col gap-8 justify-center items-center">
+    <img class="w-52" src="../img/logo-luxbali.svg" alt="LuxBali Logo">
+		<div class="form-container bg-white shadow-xl rounded-xl flex flex-col gap-10 items-center justify-center px-5 py-10 lg:px-8 tablet:px-8 laptop:px-16 tablet:scale-90">
+			<div class="title-box flex flex-col gap-4 items-center">
+				<div class="title flex flex-col items-center">
+					<h1 class="text-dark font-bold text-2xl">Log in to your Account</h1>
+					<p class="text-dark text-lg laptop:text-xl">Welcome back!</p>
+				</div>
+			</div>
+			<form class="form-box w-full flex flex-col gap-4" action="">
+				<div class="input-box flex flex-col gap-2 w-full">
+                    <label 
+                        class="text-dark font-semibold" 
+                        for="userEmail">
+                        Email Address
+                    </label>
+                    <input 
+                        class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+                        type="text" 
+                        name="userEmail" 
+                        id="userEmail" 
+                        required
+                    >
+                </div>
+				<div class="input-box flex flex-col gap-2 w-full">
+                    <label 
+                        class="text-dark font-semibold" 
+                        for="userPassword">
+                        Password
+                    </label>
+                    <input 
+                        class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+                        type="password" 
+                        name="userPassword" 
+                        id="userPassword" 
+                        required
+                    >
+                </div>
+                <div class="remember-box flex justify-between items-center">
+                    <div class="flex items-center">
+                        <input id="remember-checkbox" type="checkbox" value="" class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                        <label for="remember-checkbox" class="ms-2 text-base font-medium text-dark">Remember me</label>
+                    </div>
+                    <a class="text-main hover:underline text-base" href="">Forgot password?</a>
+                </div>
+                <div class="captcha-box flex gap-2">
+                    <p class="bg-[#BB9B6A] text-xl py-2 px-4 text-white tablet:px-8">12345</p>
+                    <input 
+                        class="w-full border border-dark rounded-md p-2 focus:ring-main focus:border-main" 
+                        type="text"
+                        placeholder="Input Captcha"
+                        name="userCaptcha" 
+                        id="userCaptcha" 
+                        required
+                    >
+                </div>
+				<button type="submit" class="bg-main text-white text-center w-full rounded-md p-3 hover:bg-blue-400 duration-300">Login</button>
+			</form>
+		</div>
+	</main>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- Main JS -->
+    <script src="JS/script.js"></script>
+    <!-- Date Picker -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
