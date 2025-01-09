@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c3d5183f0f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+        .header img{
+            width: 60%;
+        }
+        .line{
+            background-color: #0084FF;
+            height: 2px;
+            width: 100%;
+        }
+        .img-verify{
+            margin-top: 28px;
+            width: 80%;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px;
+        }
+        .content h1{
+            font-size: 24px;
+            color: #1E1E1E;
+        }
+        .content h2{
+            font-size: 18px;
+            color: #BAB9B7;
+        }
+        .content p{
+            color: #1E1E1E;
+        }
+        .socmed{
+            display: flex;
+            gap: 12px;
+            align-self: center;
+        }
+        .socmed a{
+            background-color: #FF6347;
+            padding: 10px 16px;
+            border-radius: 4px;
+            color: #fff;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 12px;
+            color: #BAB9B7;
+            padding: 10px;
+        }
+        .cta {
+            padding: 12px 40px;
+            font-weight: 600;
+            border-radius: 4px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #0084FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="img/logo-luxbali.png" alt="Lux Bali Logo">
+        </div>
+        <div class="line"></div>
+        <img class="img-verify" src="img/approval-img.png" alt="Illustration of email approval">
+        <div class="content">
+            <h1>Hi {User Name}</h1>
+            <h2>Your LuxBali account has been approved!</h2>
+            <p>Your LuxBali account has been approved and you can now log in to the LuxBali Website.</p>
+            <a class="cta" href="">Get Started</a>
+            <div class="socmed">
+                <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>This email was sent to you by LuxBali, You are receiving this email because you already Register on LuxBali</p>
+            <p>Copyright © 2024 LuxBali All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
