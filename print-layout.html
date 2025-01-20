@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Package Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #929292;
+            background-color: #F5FAFF;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header, .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0084FF;
+            color: #FFFFFF;
+        }
+
+        .footer {
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #1F1F1F;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            border-bottom: 2px solid #0084FF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #0084FF;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #0084FF;
+        }
+
+        th {
+            background-color: #0084FF;
+            color: #FFFFFF;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .terms {
+            font-size: 12px;
+            color: #929292;
+        }
+
+        .accent {
+            color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LuxBali</h1>
+        <p>Address | Contact Info | Email</p>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="section">
+                <h2>Booking Date</h2>
+                <div class="details">[Insert Booking Date Here]</div>
+            </div>
+
+            <div class="section">
+                <h2>Payment Status</h2>
+                <div class="details accent">[Insert Payment Status Here]</div>
+            </div>
+
+            <div class="section">
+                <h2>Package Details and Address</h2>
+                <div class="details">[Insert Package Details and Address Here]</div>
+            </div>
+
+            <div class="section">
+                <h2>Guest Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Guest Name</th>
+                            <th>Age</th>
+                            <th>Passport Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[Name]</td>
+                            <td>[Age]</td>
+                            <td>[Passport Number]</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Booking Details</h2>
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Flight Number</th>
+                          <th>Departure</th>
+                          <th>Arrival</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>[Flight Number]</td>
+                          <td>[Departure Details]</td>
+                          <td>[Arrival Details]</td>
+                      </tr>
+                      <!-- Add more rows as needed -->
+                  </tbody>
+              </table>
+            </div>
+
+            <div class="section">
+                <h2>Flight Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flight Number</th>
+                            <th>Departure</th>
+                            <th>Arrival</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[Flight Number]</td>
+                            <td>[Departure Details]</td>
+                            <td>[Arrival Details]</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Terms & Conditions</h2>
+                <p class="terms">
+                  <ol>
+                    <li>Board (Bed & Breakfast).</li>
+                    <li>Asia Bangkok Hotel comes with 1 Extra Bed.</li>
+                    <li>Any cancellation will refer to Hotel policy. Booking is Non-Refundable.</li>
+                    <li>Any special request (bed type, floor, adjoining rooms, etc) is Subject to Availability.</li>
+                    <li>Check-in: 15:00 & Check-out: 12:00.</li>
+                    <li>Return airport transfer & Hotel Transfer included package.</li>
+                    <li>The hotel to collect payment from the guest for extras (i.e. minibar, restaurants, etc.).</li>
+                  </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Travel Agency Name. All rights reserved.</p>
+    </div>
+</body>
+</html>
