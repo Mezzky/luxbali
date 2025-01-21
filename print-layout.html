@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +20,17 @@
             padding: 20px;
         }
 
-        .header, .footer {
+        .header,
+        .footer {
             text-align: center;
-            padding: 10px;
-            background-color: #0084FF;
-            color: #FFFFFF;
+            padding: 20px;
+            background-color: #FFFFFF;
+            color: #1F1F1F;
+            font-weight: bold;
+        }
+
+        .header img {
+            width: 200px;
         }
 
         .footer {
@@ -32,7 +39,13 @@
             font-size: 12px;
         }
 
-        h1, h2 {
+        .footer a {
+            color: #0084FF;
+            text-decoration: none;
+        }
+
+        h1,
+        h2 {
             margin: 0;
         }
 
@@ -75,7 +88,9 @@
             margin-top: 10px;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid #0084FF;
         }
 
@@ -84,9 +99,10 @@
             color: #FFFFFF;
         }
 
-        th, td {
+        th,
+        td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
 
         .terms {
@@ -99,10 +115,11 @@
         }
     </style>
 </head>
+
 <body>
     <div class="header">
-        <h1>LuxBali</h1>
-        <p>Address | Contact Info | Email</p>
+        <img src="./img/logo-luxbali.svg" alt="">
+        <p>Jl. Majapahit No. 14 Kuta, Badung, Bali 80361, Indonesia | +62 361 75 11 05 | info@luxbali.net</p>
     </div>
 
     <div class="container">
@@ -123,45 +140,36 @@
             </div>
 
             <div class="section">
-                <h2>Guest Details</h2>
+                <h2>Booking Details</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Guest Name</th>
-                            <th>Age</th>
-                            <th>Passport Number</th>
+                            <th>Hotel</th>
+                            <th>Room Type</th>
+                            <th>Unit</th>
+                            <th>Adult</th>
+                            <th>Child</th>
+                            <th>Check in</th>
+                            <th>Check out</th>
+                            <th>Night</th>
+                            <th>Board</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>[Name]</td>
-                            <td>[Age]</td>
-                            <td>[Passport Number]</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
                         </tr>
                         <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-            </div>
-
-            <div class="section">
-                <h2>Booking Details</h2>
-                <table>
-                  <thead>
-                      <tr>
-                          <th>Flight Number</th>
-                          <th>Departure</th>
-                          <th>Arrival</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>[Flight Number]</td>
-                          <td>[Departure Details]</td>
-                          <td>[Arrival Details]</td>
-                      </tr>
-                      <!-- Add more rows as needed -->
-                  </tbody>
-              </table>
             </div>
 
             <div class="section">
@@ -169,18 +177,31 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Flight Number</th>
-                            <th>Departure</th>
-                            <th>Arrival</th>
+                            <th colspan="4">ARRIVAL</th>
+                            <th colspan="4">DEPARTURE</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>[Flight Number]</td>
-                            <td>[Departure Details]</td>
-                            <td>[Arrival Details]</td>
+                            <td>Airline</td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Origin</td>
+                            <td>Airline</td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Origin</td>
                         </tr>
-                        <!-- Add more rows as needed -->
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -188,22 +209,30 @@
             <div class="section">
                 <h2>Terms & Conditions</h2>
                 <p class="terms">
-                  <ol>
-                    <li>Board (Bed & Breakfast).</li>
-                    <li>Asia Bangkok Hotel comes with 1 Extra Bed.</li>
-                    <li>Any cancellation will refer to Hotel policy. Booking is Non-Refundable.</li>
-                    <li>Any special request (bed type, floor, adjoining rooms, etc) is Subject to Availability.</li>
-                    <li>Check-in: 15:00 & Check-out: 12:00.</li>
-                    <li>Return airport transfer & Hotel Transfer included package.</li>
-                    <li>The hotel to collect payment from the guest for extras (i.e. minibar, restaurants, etc.).</li>
-                  </ol>
+                    <ol>
+                        <li>Board (Bed & Breakfast).</li>
+                        <li>Asia Bangkok Hotel comes with 1 Extra Bed.</li>
+                        <li>Any cancellation will refer to Hotel policy. Booking is Non-Refundable.</li>
+                        <li>Any special request (bed type, floor, adjoining rooms, etc) is Subject to Availability.</li>
+                        <li>Check-in: 15:00 & Check-out: 12:00.</li>
+                        <li>Return airport transfer & Hotel Transfer included package.</li>
+                        <li>The hotel to collect payment from the guest for extras (i.e. minibar, restaurants, etc.).
+                        </li>
+                    </ol>
                 </p>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <p>&copy; 2025 Travel Agency Name. All rights reserved.</p>
+        <p>&copy; <span id="currentYear"></span> <a href="https://luxbali.net/">Lux Bali</a>. All rights reserved.
+        </p>
     </div>
+
+    <script>
+        // Get the current year dynamically
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
